@@ -20,22 +20,80 @@ body {
   font-family: "semibold";
   src: url("../fonts/ArbFONTS-GE-Dinar-One-Medium.otf");
 }
-
+.notification{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  background-color: var(--color-secound);
+  color: #fff;
+  padding: 1%;
+  border-radius: 0 5px 5px 0;
+}
+.notification svg{
+  font-size: 2rem;
+}
+.notification span{
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-family: "bold";
+}
 /* ========== Navbar =========== */
 .nav-top{
   background-color: var(--color-primary);
   height: 70px;
-  position: fixed;
 }
 
 .nav-top ul{
-  width: 100%;
+  width: 75%;
   text-align: start;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
-
+.nav-top .login{
+  color: #fff;
+  text-decoration: none;
+  font-family: "regular";
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 1%;
+}
+.nav-top .login:hover{
+  color: #fff;
+}
 .nav-top ul li{
+  display: flex;
+  align-items: center;
   margin: 0 1%;
   font-family: "regular";
+}
+.nav-top ul li svg{
+  font-size: 1.8rem;
+  padding: 3%;
+}
+
+.nav-top .lang{
+  width: 15%;
+  text-align: start;
+  color: #fff;
+  text-decoration: none;
+  font-family: "bold";
+  align-items: center;
+  display: flex;
+}
+.nav-top .lang img{
+  width: 10%;
+}
+.nav-top .lang span{
+  margin: 0 3%;
 }
 
 .nav-top ul li:last-child a{
@@ -61,10 +119,6 @@ nav {
   z-index: 10;
   padding: 1% 5%;
   margin: 0;
-}
-
-nav.navii{
-  top: 70px;
 }
 
 nav .nav-links li a.active {
@@ -172,7 +226,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .hamburger div {
   width: 30px;
   height: 3px;
-  background: #f2f5f7;
+  background: var(--color-secound);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -197,6 +251,27 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 /* ========== Navbar =========== */
+
+/* ========== header =========== */
+.header img{
+  filter: brightness(50%);
+  height: 750px;
+  width: 100%;
+  position: relative;
+}
+.header .content{
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  width: 50%;
+}
+.header .content h2{
+  color: #fff;
+  font-family: "semibold";
+  font-size: 3rem;
+  text-align: center;
+}
+/* ========== header =========== */
 
 /* ======= privacy ======= */
 .privacy{
@@ -230,6 +305,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 footer {
   background-color: var(--color-primary);
   padding-top: 3%;
+  margin-top: 5%;
 }
 
 footer .logo-col {
@@ -537,9 +613,6 @@ footer .footer-bottom .my-heart {
   footer .col-links .h3 {
     font-size: 1.5rem;
   }
-  footer .col-links ul li a {
-    font-size: 26px;
-  }
   footer .col-links ul li span {
     font-size: 12px;
   }
@@ -551,16 +624,26 @@ footer .footer-bottom .my-heart {
   nav {
     position: relative;
     z-index: 3;
-    direction: ltr;
     padding: 0;
     overflow-y: auto;
   }
   nav .logo {
-    width: 15%;
+    width: 20%;
     padding: 2vh 2vw;
+  }
+  .nav-top{
+    height: 90px;
+    padding: 10px 0;
+  }
+  nav .nav-links li a.active{
+    color: #fff;
   }
   nav .nav-links .dropdown-toggle {
     font-size: 30px;
+  }
+  .nav-top ul li svg{
+    padding: 0;
+    font-size: 1rem;
   }
   .hamburger div {
     width: 55px;
@@ -568,7 +651,24 @@ footer .footer-bottom .my-heart {
     margin: 10px;
   }
   .nav-links li a {
-    font-size: 35px;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .nav-top ul{
+    width: 70%;
+    display: block;
+  }
+  .nav-top ul li{
+    display: block;
+  }
+  .nav-top ul li svg{
+    margin-left: 3%;
+  }
+  .nav-top .lang img{
+    width: 20%;
+  }
+  .nav-top .login{
+    text-align: center;
   }
   .login-button {
     font-size: 30px;
@@ -583,7 +683,7 @@ footer .footer-bottom .my-heart {
     display: block;
     position: absolute;
     cursor: pointer;
-    right: 5%;
+    left: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 2;
@@ -638,11 +738,13 @@ footer .footer-bottom .my-heart {
     transition: all 0.5s ease 1s;
     margin: 0;
   }
+  footer .col-links{
+    justify-content: center;
+    align-items: center;
+  }
   footer .logo-col img {
     width: 25%;
-  }
-  footer .accordion .nav-link {
-    font-size: 32px;
+    margin: 0 auto;
   }
   footer .socialicon li a {
     width: 50px;
@@ -651,5 +753,27 @@ footer .footer-bottom .my-heart {
   }
   footer .socialicon li a .icon {
     font-size: 28px;
+  }
+}
+
+/* ====== Mobile style ====== */
+
+@media only screen and (max-width: 767.98px) {
+  .hamburger div{
+    width: 40px;
+    height: 5px;
+    margin: 8px;
+  }
+  nav .logo{
+    width: 25%;
+  }
+  .nav-links li a{
+    font-size: 1rem;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 15px);
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -15px);
   }
 }
