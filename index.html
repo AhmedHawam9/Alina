@@ -14,8 +14,9 @@
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <!-- ? Custom CSS -->
     <!-- ? Bootstrap CSS -->
 
@@ -28,6 +29,7 @@
 
     <!-- ? Custom JavaScript -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -226,38 +228,6 @@
                     <div class="swiper-button-prev"></div> -->
                     <div class="swiper-pagination"></div>
                 </div>
-                <!-- Initialize Swiper -->
-                <script>
-                    var swiper = new Swiper(".whySwiper", {
-                        loop: true,
-                        breakpoints: {
-                            300: {
-                                slidesPerView: 1,
-                                loopFillGroupWithBlank: false,
-                            },
-
-                            768: {
-                                slidesPerView: 2,
-                                loopFillGroupWithBlank: false,
-                            },
-
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 30,
-                                slidesPerGroup: 4,
-                                loopFillGroupWithBlank: true,
-                            },
-                        },
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true,
-                        },
-                        // navigation: {
-                        //     nextEl: ".swiper-button-next",
-                        //     prevEl: ".swiper-button-prev",
-                        // },
-                    });
-                </script>
             </div>
         </div>
     </section>
@@ -391,33 +361,340 @@
                             <!-- ========= Slide ========= -->
                         </div>
                     </div>
-                    <!-- Initialize Swiper -->
-                    <script>
-                        var swiper = new Swiper(".services_Swiper", {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
-                            loop: true,
-                            breakpoints: {
-                                300: {
-                                    slidesPerView: 2,
-                                },
 
-                                768: {
-                                    slidesPerView: 3,
-                                },
-                            },
-                            pagination: {
-                                el: ".swiper-pagination",
-                                clickable: true,
-                            },
-                        });
-                    </script>
 
                 </div>
             </div>
         </div>
     </section>
     <!-- =========== ? Services =========== -->
+
+    <!-- =========== ? Work =========== -->
+    <section class="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h3 class="how-to-work">كيف تعمل؟</h3>
+                    <ol class="list-group vertical-steps">
+                        <li class="list-group-item">
+                            <div class="work-text">
+                                <h4>أدخل تفاصيل منتجك المراد شحنه</h4>
+                                <p>استمتع براحة منزلك لأن استخدام خدمات توصيل البريد السريع لم يكن أسهل من أي وقت. إذا
+                                    كنت ترغب في إرسال الهدايا إلى أصدقائك وعائلتك،</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="work-text">
+                                <h4>أدفع بإستخدام بطاقة الخدمة الخاصة بك</h4>
+                                <p>استمتع براحة منزلك لأن استخدام خدمات توصيل البريد السريع لم يكن أسهل من أي وقت. إذا
+                                    كنت ترغب في إرسال الهدايا إلى أصدقائك وعائلتك،</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="work-text">
+                                <h4>وأخيرا ! نحن على إستعداد لتوصيل البضائع
+                                    الخاصة بك</h4>
+                                <p>استمتع براحة منزلك لأن استخدام خدمات توصيل البريد السريع لم يكن أسهل من أي وقت. إذا
+                                    كنت ترغب في إرسال الهدايا إلى أصدقائك وعائلتك،</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <form action="">
+                        <h2>يمكنك حساب شحنتك الآن</h2>
+                        <div class="row">
+                            <!-- ======= Name ======= -->
+                            <div class="col-sm-12">
+                                <div class="form-group name">
+                                    <label for="">الاسم الشخصي</label>
+                                    <input type="text" name="" id="" class="form-control" placeholder="الاسم الكامل"
+                                        aria-describedby="helpId">
+                                    <i class="far fa-user"></i>
+                                </div>
+                            </div>
+                            <!-- ======= Name ======= -->
+
+                            <!-- ======= Email ======= -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group email">
+                                    <label for="">البريد الإلكتروني</label>
+                                    <input type="text" name="" id="" class="form-control"
+                                        placeholder="البريد الإلكتروني" aria-describedby="helpId">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                            </div>
+                            <!-- ======= Email ======= -->
+
+                            <!-- ======= Mobile ======= -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="">رقم الجوال </label>
+                                    <input type="text" name="" id="" class="form-control" placeholder="رقم جوالك"
+                                        aria-describedby="helpId">
+                                </div>
+                            </div>
+                            <!-- ======= Mobile ======= -->
+
+                            <!-- ======= country of sending ======= -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="">بلد الإرسال</label>
+                                    <select name="" id="" class="form-control selectpicker" title="من">
+                                        <option value="">مصر</option>
+                                        <option value="">السعودية</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- ======= country of sending ======= -->
+
+                            <!-- ======= Receiving country ======= -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="">بلد الإستلام</label>
+                                    <select name="" id="" class="form-control selectpicker" title="الى">
+                                        <option value="">مصر</option>
+                                        <option value="">السعودية</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- ======= Receiving country ======= -->
+
+                            <!-- ======= Shipment type ======= -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="">نوع الشحنة</label>
+                                    <input type="text" name="" id="" class="form-control"
+                                        placeholder="مثال .. شحنة ورقية" aria-describedby="helpId">
+                                </div>
+                            </div>
+                            <!-- ======= Shipment type ======= -->
+
+                            <!-- ======= Date ======= -->
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group date">
+                                    <label for="">التاريخ</label>
+                                    <input type="text" name="" id="" class="form-control" onfocus="(this.type='date')"
+                                        placeholder="التاريخ" aria-describedby="helpId">
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <!-- ======= Date ======= -->
+
+                            <!-- ======= Weight ======= -->
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" name="" id="" class="form-control" placeholder="الوزن ( كجم )"
+                                        aria-describedby="helpId">
+                                </div>
+                            </div>
+                            <!-- ======= Weight ======= -->
+
+                            <!-- ======= length ======= -->
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" name="" id="" class="form-control" placeholder="الطول ( سم )"
+                                        aria-describedby="helpId">
+                                </div>
+                            </div>
+                            <!-- ======= length ======= -->
+
+                            <!-- ======= Hight ======= -->
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" name="" id="" class="form-control" placeholder="الارتفاع ( سم )"
+                                        aria-describedby="helpId">
+                                </div>
+                            </div>
+                            <!-- ======= Hight ======= -->
+                            <button type="submit" class="btn btn-truck hvr-bob">احسب الشحنة</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? Work =========== -->
+
+    <!-- =========== ? blog =========== -->
+    <section class="blog">
+        <div class="container">
+            <h2>أخر مقالاتنا المتجددة دائما</h2>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <!-- ======== Main article ======== -->
+                    <div class="main-article">
+                        <img src="media/image/ship3.jpg" class="img-article" alt="article">
+                        <span class="date-article"><i class="far fa-calendar"></i> مايو2 , 2020</span>
+                        <span class="name-article"><i class="far fa-user"></i> رشا السيد</span>
+                        <span class="type-truck-article"><i class="far fa-folder"></i> شحنات ثقيلة</span>
+                        <h3 class="title-article">أخر الشحنات التي قامت بها شركه علينا وكيف تم توصيل الشحنه بأمان وحرفيه
+                            وبأقل الأسعار</h3>
+                        <p class="text-article">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                            النص من مولد النص
+                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص</p>
+                    </div>
+                    <!-- ======== Main article ======== -->
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <!-- ======== Article ======== -->
+                    <div class="col-sm-12">
+                        <div class="article">
+                            <img src="media/image/ship2.jpg" class="img-article" alt="article">
+                            <div class="content-article">
+                                <span class="date-article"><i class="far fa-calendar"></i> مايو2 , 2020</span>
+                                <span class="name-article"><i class="far fa-user"></i> رشا السيد</span>
+                                <span class="type-truck-article"><i class="far fa-folder"></i> شحنات ثقيلة</span>
+                                <h5 class="title-article">أخر الشحنات التي قامت بها شركه علينا وكيف تم توصيل الشحنه
+                                    بأمان
+                                    وحرفيه وبأقل الأسعار</h5>
+                                <p class="text-article">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                    هذا
+                                    النص من مولد النص
+                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======== Article ======== -->
+                    <!-- ======== Article ======== -->
+                    <div class="col-sm-12">
+                        <div class="article">
+                            <img src="media/image/ship1.jpg" class="img-article" alt="article">
+                            <div class="content-article">
+                                <span class="date-article"><i class="far fa-calendar"></i> مايو2 , 2020</span>
+                                <span class="name-article"><i class="far fa-user"></i> رشا السيد</span>
+                                <span class="type-truck-article"><i class="far fa-folder"></i> شحنات ثقيلة</span>
+                                <h5 class="title-article">أخر الشحنات التي قامت بها شركه علينا وكيف تم توصيل الشحنه
+                                    بأمان
+                                    وحرفيه وبأقل الأسعار</h5>
+                                <p class="text-article">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                    هذا
+                                    النص من مولد النص
+                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======== Article ======== -->
+                    <!-- ======== Article ======== -->
+                    <div class="col-sm-12">
+                        <div class="article">
+                            <img src="media/image/ship3.jpg" class="img-article" alt="article">
+                            <div class="content-article">
+                                <span class="date-article"><i class="far fa-calendar"></i> مايو2 , 2020</span>
+                                <span class="name-article"><i class="far fa-user"></i> رشا السيد</span>
+                                <span class="type-truck-article"><i class="far fa-folder"></i> شحنات ثقيلة</span>
+                                <h5 class="title-article">أخر الشحنات التي قامت بها شركه علينا وكيف تم توصيل الشحنه
+                                    بأمان
+                                    وحرفيه وبأقل الأسعار</h5>
+                                <p class="text-article">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                    هذا
+                                    النص من مولد النص
+                                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======== Article ======== -->
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".blog .article .text-article").text(function (index, currentText) {
+                return currentText.substr(0, 100);
+            });
+            $(".blog .main-article .text-article").text(function (index, currentText) {
+                return currentText.substr(0, 200);
+            });
+        </script>
+    </section>
+    <!-- =========== ? blog =========== -->
+
+    <!-- =========== ? Download =========== -->
+    <section class="download">
+        <div class="container-fluid">
+            <div class="row">
+                <img src="media/image/download.jpg" class="background-download" alt="download">
+            </div>
+        </div>
+        <div class="download-description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-table">
+                        <h4>تحميل التطبيق مجانا الآن</h4>
+                    </div>
+                    <div class="col-lg-6 col-12 btn-download">
+                        <a class="btn">App Store <img src="media/image/apple.png" alt="apple"></a>
+                        <a class="btn">google play <img src="media/image/google.png" alt="google"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== ? Download =========== -->
+
+    <!-- =========== Initialize services Swiper =========== -->
+    <script>
+        var swiper = new Swiper(".services_Swiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                },
+
+                768: {
+                    slidesPerView: 3,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- =========== Initialize services Swiper =========== -->
+
+    <!-- =========== Initialize Why Swiper =========== -->
+    <script>
+        var swiper = new Swiper(".whySwiper", {
+            loop: true,
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    loopFillGroupWithBlank: false,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    loopFillGroupWithBlank: false,
+                },
+
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    slidesPerGroup: 4,
+                    loopFillGroupWithBlank: true,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+        });
+    </script>
+    <!-- =========== Initialize Why Swiper =========== -->
+
+
+
+
 
     <!-- ? ======= footer =========== -->
     <footer>
@@ -563,6 +840,7 @@
         }
     </script>
     <!-- =========== Active navbar Link in multi pages ============= -->
+
 
 </body>
 
