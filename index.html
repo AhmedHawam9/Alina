@@ -108,7 +108,7 @@
             <div class="row">
                 <img src="media/image/header.jpg" alt="header">
                 <div class="content">
-                    <h2>شركة علينا لشحن قوي آمن و سريع</h2>
+                    <h2 class="text-header">شركة علينا لشحن قوي آمن و سريع</h2>
                     <p>نقدم خدماتنا للأفراد و الشركات والمؤسسات وجميع أنواع الشحن</p>
                     <button class="btn new-track">شحنة جديدة</button>
                     <button class="btn download">تحميل التطبيق</button>
@@ -808,40 +808,8 @@
     </footer>
     <!-- ? ======= footer =========== -->
 
-
-    <!-- ============ Animate navbar ============ -->
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        const links = document.querySelectorAll(".nav-links li");
-
-        hamburger.addEventListener('click', () => {
-            //Animate Links
-            navLinks.classList.toggle("open");
-            links.forEach(link => {
-                link.classList.toggle("fade");
-            });
-
-            //Hamburger Animation
-            hamburger.classList.toggle("toggle");
-        });
-    </script>
-    <!-- ============ Animate navbar ============ -->
-
-    <!-- =========== Active navbar Link in multi pages ============= -->
-    <script>
-        const currentLocation = location.href;
-        const menuItem = document.querySelectorAll('.nav-links li a');
-        const menuLength = menuItem.length
-        for (let i = 0; i < menuLength; i++) {
-            if (menuItem[i].href === currentLocation) {
-                menuItem[i].className = "active"
-            }
-        }
-    </script>
-    <!-- =========== Active navbar Link in multi pages ============= -->
-
-
+    <script src="js/main.js"></script>
+    
 </body>
 
 </html>
