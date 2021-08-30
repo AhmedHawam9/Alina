@@ -268,6 +268,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 .header {
   position: relative;
+  height: 750px;
 }
 
 .header img {
@@ -308,6 +309,35 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   font-family: "semibold";
   padding: 2.5% 0;
   border-radius: 8px;
+}
+
+.header .content-company {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  width: 45%;
+  text-align: start;
+}
+
+.header .content-company h2 {
+  color: #fff;
+  font-family: "semibold";
+  font-size: 2rem;
+}
+
+.header .content-company p {
+  color: #fff;
+  font-family: "regular";
+  width: 90%;
+  margin: 5% 0;
+}
+
+.header .content-company .btn {
+  background-color: var(--color-secound);
+  color: #fff;
+  width: 30%;
+  padding: 1.5% 0;
+  margin: 0;
 }
 
 .header .new-track {
@@ -1309,16 +1339,23 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 @media (max-width: 480px) {
   .steps .box {
-    width: 16px;
-    height: 16px;
+    width: 25%;
+  }
+  .steps .box-row {
+    width: 100vw;
   }
   .steps .box-icon {
-    width: 16px;
-    height: 16px;
+    width: 60px;
+    height: 60px;
+    padding: 15px
   }
-  .steps svg {
-    width: 16px;
-    height: 16px;
+  .steps .box-icon span {
+    width: 20px;
+    height: 20px;
+    bottom: -5px;
+  }
+  .steps .box-icon img {
+    width: 25px;
   }
 }
 
@@ -1340,9 +1377,11 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 /* ======= Steps ======= */
 
 /* ======= Payment way ======= */
-.payment_way{
+
+.payment_way {
   margin-bottom: 5%;
 }
+
 .payment_way h2 {
   text-align: center;
   font-family: "semibold";
@@ -1364,18 +1403,21 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   right: 0;
 }
 
-.payment_way .package{
+.payment_way .package {
   box-shadow: 0 6px 12px rgba(167, 167, 167, .16);
   padding-bottom: 5%;
-  transition: 1s ease-in-out;
+  transition: .7s cubic-bezier(0.42, 0, 0.31, 0.58);
 }
-.payment_way .package:hover{
+
+.payment_way .package:hover {
   box-shadow: 0px 0px 0px 1px #322473;
   border-radius: 12px 12px 0 0;
 }
-.payment_way .package:hover .btn{
+
+.payment_way .package:hover .btn {
   background-color: var(--color-secound);
 }
+
 .payment_way .col-lg-4 .package .package-header {
   background-image: linear-gradient(to left, #F1872B, #FCBD52);
   color: #fff;
@@ -1383,10 +1425,12 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   border-radius: 12px 12px 0 0;
   padding: 5% 0;
 }
-.payment_way .col-lg-4:nth-child(2) .package .package-header{
+
+.payment_way .col-lg-4:nth-child(2) .package .package-header {
   background-image: linear-gradient(to left, #57549E, #8881F0);
 }
-.payment_way .col-lg-4:nth-child(3) .package .package-header{
+
+.payment_way .col-lg-4:nth-child(3) .package .package-header {
   background-image: linear-gradient(to left, #1F8052, #31D487);
 }
 
@@ -1414,16 +1458,374 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   width: 50%;
   border-radius: 12px;
 }
-.payment_way .package ul{
+
+.payment_way .package ul {
   padding: 1.5rem;
 }
-.payment_way .package ul li{
+
+.payment_way .package ul li {
   font-family: "regular";
   color: var(--color-fourth);
   margin: 5% 0;
 }
 
 /* ======= Payment way ======= */
+
+/* ======= provide-you ======= */
+
+.provide-you {
+  margin: 5% 0;
+}
+
+.provide-you h2 {
+  text-align: center;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto 5%;
+  width: fit-content;
+}
+
+.provide-you h2::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  background-color: #FFCC03;
+  bottom: 0;
+  right: 0;
+}
+
+.provide-you p {
+  color: var(--color-fourth);
+  font-family: "regular";
+}
+
+.provide-you .card_provide {
+  text-align: center;
+}
+
+.provide-you .card_provide .provide_img {
+  background-color: #F7F7F7;
+  height: 100px;
+  width: 100px;
+  padding: 27.5px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.provide-you .card_provide .provide_img img {
+  width: 45px;
+  height: 45px;
+}
+
+.provide-you .card_provide h5 {
+  color: var(--color-fourth);
+  font-family: "semibold";
+  margin: 5% 0 3%;
+}
+
+.provide-you .card_provide p {
+  color: #4E4E4E;
+  font-family: "regular";
+  width: 60%;
+  margin: 0 auto;
+}
+
+.provide-you .card_provide .btn {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 3% auto;
+  color: #fff;
+  background-color: var(--color-secound);
+  font-family: "semibold";
+}
+
+.provide-you .card_provide .btn svg {
+  margin: 0 5%;
+}
+
+/* ======= provide-you ======= */
+
+/* ======= other_mile ======= */
+
+.other_mile .img_work {
+  width: 90%;
+  height: 400px;
+  border-radius: 12px;
+}
+
+.other_mile h2 {
+  color: var(--color-fourth);
+  font-family: "semibold";
+}
+
+.other_mile p {
+  color: var(--color-fourth);
+  font-family: "regular";
+}
+
+.other_mile .method_work {
+  margin: 5% 0;
+}
+
+.other_mile .method_work .step_work:nth-child(odd) {
+  direction: ltr;
+}
+
+.other_mile .method_work .step_work:nth-child(even) {
+  direction: rtl;
+}
+
+.other_mile .method_work .step_work .img_step {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-secound);
+  position: relative;
+}
+
+.other_mile .method_work .step_work .img_step img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.other_mile .method_work .step_work .img_step .number_step {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--color-secound);
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.other_mile .method_work .step_work .text_step {
+  width: 84%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.other_mile .method_work .step_work .text_step h6 {
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+
+.other_mile .method_work .step_work .text_step p {
+  font-family: "regular";
+  color: var(--color-fourth);
+  margin: 0;
+}
+
+.other_mile .method_work .step_work:nth-child(odd) .text_step h6 {
+  text-align: end;
+}
+
+.other_mile .method_work .step_work:nth-child(odd) .text_step p {
+  text-align: end;
+}
+
+.other_mile .method_work h2 {
+  text-align: center;
+}
+
+.other_mile .method_work .step_work:nth-child(even) .line_step {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.other_mile .method_work .step_work:nth-child(odd) .line_step {
+  transform: scaleX(-1);
+  width: 95%;
+  margin: 0 auto;
+}
+
+.other_mile .method_work .step_work:last-child .line_step {
+  display: none;
+}
+
+.other_mile .method_work .step_work .horizontal {
+  background-color: transparent;
+  background-image: linear-gradient(to right, var(--color-secound) 70%, rgba(255, 255, 255, 0) 0%);
+  background-size: 10px 3px;
+  margin: 0;
+  height: 1.5px;
+}
+
+.other_mile .method_work .step_work .right_vertical {
+  border-right: 3px dashed var(--color-secound);
+  height: 50px;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.other_mile .method_work .step_work .left_vertical {
+  border-left: 3px dashed var(--color-secound);
+  height: 50px;
+  background-color: transparent;
+  margin-top: 0;
+}
+
+/* ======= other_mile ======= */
+
+/* ======= Store ======= */
+
+.store img {
+  width: 90%;
+  border-radius: 12px;
+  height: 400px;
+}
+
+.store h2 {
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+
+.store p {
+  font-family: "regular";
+  color: var(--color-fourth);
+}
+
+/* ======= Store ======= */
+
+/* ======= road_transport ======= */
+
+.road_transport {
+  margin: 5% 0;
+}
+
+.road_transport img {
+  width: 90%;
+  border-radius: 12px;
+  height: 400px;
+}
+
+.road_transport h2 {
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+
+.road_transport p {
+  font-family: "regular";
+  color: var(--color-fourth);
+}
+
+/* ======= Store ======= */
+
+/* ======= header_map ======= */
+
+.header_map img {
+  width: 100%;
+  height: 400px;
+  pointer-events: none;
+}
+
+/* ======= header_map ======= */
+
+/* ======= contact-section ======= */
+
+.contact-section {
+  margin-top: -50px;
+  z-index: 99;
+}
+
+.contact-section .contact-card {
+  box-shadow: 0px 6px 12px rgba(167, 167, 167, .16);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 5%;
+  border-radius: 8px;
+  width: 90%;
+}
+
+.contact-section .contact-card svg {
+  color: var(--color-primary);
+  font-size: 2rem;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+}
+
+.contact-section .contact-card .text-contact {
+  display: inline-block;
+  width: 80%;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  margin: 0 5%;
+}
+
+.contact-section .contact-card .text-contact p {
+  margin-bottom: 0;
+}
+
+.contact-form h3 {
+  text-align: center;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 5% auto;
+  width: fit-content;
+}
+
+.contact-form h3::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  background-color: #FFCC03;
+  bottom: -5px;
+  right: 0;
+}
+
+.contact-form form {
+  border: 1px solid #C5C5C5;
+  padding: 5%;
+  border-radius: 12px;
+  margin-bottom: 5%;
+}
+
+.contact-form form .form-group {
+  margin: 2% 0;
+}
+
+.contact-form form label{
+  font-family: "semibold";
+  color: var(--color-fourth);
+  font-size: 1rem;
+  margin-bottom: 1%;
+}
+.contact-form form button{
+  background-color: var(--color-secound);
+  color: #fff;
+  width: 30%;
+  margin: 3% auto 0;
+  padding: .7% 0;
+  display: block;
+  font-family: "semibold";
+  border-radius: 8px;
+}
+
+/* ======= contact-section ======= */
 
 /* ======= privacy ======= */
 
@@ -1905,8 +2307,14 @@ footer .footer-bottom .my-heart {
     right: 25%;
     width: 50%;
   }
+  .header {
+    height: 500px;
+  }
   .header img {
     height: 500px;
+  }
+  .header .content-company {
+    width: 70%;
   }
   .services .btn {
     margin-bottom: 10%;
@@ -1966,6 +2374,46 @@ footer .footer-bottom .my-heart {
   .privacy ul {
     width: 100%;
   }
+  .personal-header img {
+    height: 350px;
+  }
+  .personal-header form {
+    margin-top: 20%;
+  }
+  .shipment_details {
+    margin-top: 70%;
+  }
+  .shipment_details h3 {
+    margin: 5% 0;
+  }
+  .steps .box-label {
+    font-size: .8rem;
+  }
+  .provide-you .card_provide p {
+    width: 100%;
+  }
+  .provide-you .card_provide .btn {
+    width: 70%;
+  }
+  .store img, .road_transport img, .other_mile .img_work {
+    width: 100%;
+    border-radius: 12px;
+    height: 250px;
+  }
+  .header_map img{
+    object-fit: cover;
+  }
+  .contact-section .contact-card{
+    width: 100%;
+  }
+  .contact-section .contact-card svg{
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+  }
+  .contact-section .contact-card .text-contact p{
+    font-size: .9rem;
+  }
   footer .col-links {
     justify-content: center;
     align-items: center;
@@ -2007,8 +2455,15 @@ footer .footer-bottom .my-heart {
   .notification {
     padding: 2%;
   }
+  .header {
+    height: 350px;
+  }
   .header img {
     height: 350px;
+  }
+  .header .content-company {
+    top: 10%;
+    width: 95%;
   }
   .header .content {
     right: unset;
@@ -2048,5 +2503,46 @@ footer .footer-bottom .my-heart {
   }
   .blog .article .content-article {
     width: 100%;
+  }
+  .personal-header .content {
+    width: 100%;
+    left: unset;
+    right: unset;
+  }
+  .shipment_details {
+    margin-top: 200%;
+  }
+  .steps p {
+    width: 85%;
+  }
+  .provide-you .card_provide {
+    margin: 5% 0;
+  }
+  .provide-you .card_provide p {
+    width: 70%;
+  }
+  .provide-you .card_provide .btn {
+    width: 50%;
+  }
+  .other_mile .method_work .step_work .text_step {
+    width: 70%;
+  }
+  .store, .road_transport {
+    margin: 10% 0;
+  }
+  .store img, .road_transport img, .other_mile .img_work {
+    margin: 5% 0;
+  }
+  .header_map img{
+    height: 300px;
+  }
+  .contact-section{
+    margin-top: 5%;
+  }
+  .contact-section .contact-card{
+    margin: 3% 0;
+  }
+  .contact-section .contact-card .text-contact p{
+    font-size: 1.1rem;
   }
 }
