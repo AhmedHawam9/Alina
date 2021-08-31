@@ -1724,7 +1724,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   color: var(--color-fourth);
 }
 
-/* ======= Store ======= */
+/* ======= road_transport ======= */
 
 /* ======= header_map ======= */
 
@@ -1808,13 +1808,14 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin: 2% 0;
 }
 
-.contact-form form label{
+.contact-form form label {
   font-family: "semibold";
   color: var(--color-fourth);
   font-size: 1rem;
   margin-bottom: 1%;
 }
-.contact-form form button{
+
+.contact-form form button {
   background-color: var(--color-secound);
   color: #fff;
   width: 30%;
@@ -1826,6 +1827,311 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 /* ======= contact-section ======= */
+
+/* ======= about ======= */
+
+.about_header {
+  position: relative;
+}
+
+.about_header img {
+  filter: brightness(50%);
+  height: 400px;
+  width: 100%;
+  padding: 0;
+}
+
+.about_header h1 {
+  color: #fff;
+  font-family: "semibold";
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 100%;
+  text-align: end;
+}
+
+.about {
+  margin: 5% 0 10%;
+}
+
+.about h2 {
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+
+.about p {
+  width: 90%;
+  font-family: "regular";
+  color: var(--color-third);
+}
+
+.about .content-about {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about .mission, .about .vision {
+  width: 49%;
+  display: inline-block;
+}
+
+.about .mission svg, .about .vision svg {
+  color: var(--color-secound);
+  font-size: 2.5rem;
+}
+
+.about .mission h5, .about .vision h5 {
+  font-family: "semibold";
+  color: var(--color-fourth);
+  margin: 3% 0;
+}
+
+.about .mission p, .about .vision p {
+  width: 65%;
+  font-family: "regular";
+  color: var(--color-third);
+}
+
+.about .img-about {
+  position: relative;
+  width: 80%;
+}
+
+.about .img-about img {
+  border-radius: 8px;
+}
+
+.about .img-about img:nth-child(1) {
+  width: 100%;
+  height: 500px;
+}
+
+.about .img-about img:nth-child(2) {
+  position: absolute;
+  bottom: -15%;
+  right: -15%;
+  width: 300px;
+  height: 300px;
+}
+
+/* ======= about ======= */
+
+/* ======= Static ======= */
+
+.static {
+  background-color: #F9F7FF;
+  padding: 2% 0;
+}
+
+.static svg {
+  width: 30% !important;
+  font-size: 2rem;
+  color: transparent;
+  stroke-width: 30px;
+  stroke: var(--color-primary);
+}
+
+.static .text-static {
+  width: 68%;
+  display: inline-block;
+}
+
+.static .text-static h2 {
+  font-weight: bolder;
+  color: var(--color-fourth);
+}
+
+.static .text-static p {
+  margin: 0;
+  color: var(--color-fourth);
+  font-family: "regular";
+}
+
+/* ======= Static ======= */
+
+/* video */
+
+.video-wrapper {
+  height: 100%;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.video-container .video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.play-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.play-button-wrapper #circle-play-b {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.play-button-wrapper #circle-play-b svg {
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+/* video */
+
+/* ======= choose ======= */
+
+.choose {
+  margin: 5% 0;
+}
+
+.choose h1 {
+  text-align: center;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  display: flex;
+  position: relative;
+  margin: 0 0 5%;
+  width: fit-content;
+}
+
+.choose h1::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  background-color: #FFCC03;
+  bottom: 0;
+  right: 0;
+}
+
+.choose p {
+  font-family: "regular";
+  color: var(--color-third);
+  width: 60%;
+}
+
+.choose .why-serv {
+  display: flex;
+  width: 65%;
+}
+
+.choose .services-choose {
+  width: 25%;
+}
+
+.choose .services-choose svg {
+  font-size: 1rem;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secound);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.choose .services-choose p {
+  text-align: center;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  width: 100%;
+}
+
+/* ======= choose ======= */
+
+/* ======= Team ======= */
+
+.team h2 {
+  text-align: center;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  display: flex;
+  position: relative;
+  margin: 0 auto 5%;
+  width: fit-content;
+}
+
+.team h2::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  background-color: #FFCC03;
+  bottom: 0;
+  right: 0;
+}
+.team .card .card-img-top{
+  height: 250px;
+  border-radius: 8px;
+}
+.team .card .card-name{
+  font-family: "semibold";
+  color: var(--color-fourth);
+  font-size: 1.7rem;
+}
+.team .card .card-title{
+  font-family: "regular";
+  color: var(--color-fourth);
+}
+.team .card .card-text{
+  font-family: "regular";
+  color: #999999;
+}
+
+/* ======= Team ======= */
+
+/* ======= partner ======= */
+.partner{
+  background-color: #F3F3F3;
+  padding: 2% 0;
+  margin: 5% 0;
+}
+.partner img{
+  width: 150px;
+  height: 90px;
+}
+/* ======= partner ======= */
 
 /* ======= privacy ======= */
 
@@ -2400,19 +2706,31 @@ footer .footer-bottom .my-heart {
     border-radius: 12px;
     height: 250px;
   }
-  .header_map img{
+  .header_map img {
     object-fit: cover;
   }
-  .contact-section .contact-card{
+  .contact-section .contact-card {
     width: 100%;
   }
-  .contact-section .contact-card svg{
+  .contact-section .contact-card svg {
     width: 35px;
     height: 35px;
     padding: 7px;
   }
-  .contact-section .contact-card .text-contact p{
+  .contact-section .contact-card .text-contact p {
     font-size: .9rem;
+  }
+  .payment_way .package {
+    margin: 5% 0;
+  }
+  .about .img-about img:nth-child(2) {
+    display: none;
+  }
+  .about .img-about {
+    margin: 5% auto 0;
+  }
+  .choose p, .choose .why-serv {
+    width: 100%;
   }
   footer .col-links {
     justify-content: center;
@@ -2533,16 +2851,28 @@ footer .footer-bottom .my-heart {
   .store img, .road_transport img, .other_mile .img_work {
     margin: 5% 0;
   }
-  .header_map img{
+  .header_map img {
     height: 300px;
   }
-  .contact-section{
+  .contact-section {
     margin-top: 5%;
   }
-  .contact-section .contact-card{
+  .contact-section .contact-card {
     margin: 3% 0;
   }
-  .contact-section .contact-card .text-contact p{
+  .contact-section .contact-card .text-contact p {
     font-size: 1.1rem;
+  }
+  .about_header img {
+    height: 250px;
+  }
+  .about .img-about img:nth-child(1) {
+    height: 250px;
+  }
+  .video-container {
+    margin: 5% auto;
+  }
+  .choose h1 {
+    margin: 15% 0 5%;
   }
 }
