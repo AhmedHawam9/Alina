@@ -14,6 +14,8 @@
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -24,6 +26,7 @@
     <!-- ? Main JavaScript -->
 
     <!-- ? Custom JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -96,102 +99,135 @@
     </nav>
     <!-- =========== ? NavBar =========== -->
 
-    <!-- =========== ? Header map =========== -->
-    <section class="header_map">
-        <div class="container-fluid p-0">
-            <img src="media/image/map.PNG" alt="map">
-        </div>
-    </section>
-    <!-- =========== ? Header map =========== -->
-
-    <!-- =========== ? contact =========== -->
-    <section class="contact-section">
+    <!-- =========== ? signup =========== -->
+    <section class="signup">
         <div class="container">
-            <div class="row">
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="text-contact">
-                            <p>25 , شارع الملك عبد
-                                العزيزالحى الخامس , جدة</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ======== contact card ======== -->
+            <form class="form-signup" action="">
+                <ul class="nav nav-pills mb-3 p-0" id="pills-tab" role="tablist">
+                    <!-- =========== button company =========== -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-company-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-company" type="button" role="tab" aria-controls="pills-company"
+                            aria-selected="true">حساب شركات</button>
+                    </li>
+                    <!-- =========== button company =========== -->
 
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <div class="text-contact">
-                            <p>+2688325458451</p>
-                            <p>+2688325458451</p>
-                        </div>
+                    <!-- =========== button personal =========== -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-personal-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-personal" type="button" role="tab" aria-controls="pills-personal"
+                            aria-selected="false">حساب شخصي</button>
+                    </li>
+                    <!-- =========== button personal =========== -->
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- =========== button company =========== -->
+                    <div class="tab-pane fade show active" id="pills-company" role="tabpanel"
+                        aria-labelledby="pills-company-tab">
+                        <div class="box-test">
+                            <input class="toggle-box" id="toggleId-4" type="checkbox">
+                            <label for="toggleId-4">Click here to read more about HTML!</label>
+                            <div class="toggle-box-content">test</div>
+                          
+                            <input class="toggle-box" id="toggleId-5" type="checkbox">
+                            <label for="toggleId-5">Click here to read more about CSS!</label>
+                            <div class="toggle-box-content">tets</div>
+                          
+                            <input class="toggle-box" id="toggleId-6" type="checkbox">
+                            <label for="toggleId-6">Click here to read more about JS!</label>
+                            <div class="toggle-box-content"> test</div>
+                          </div>
                     </div>
-                </div>
-                <!-- ======== contact card ======== -->
+                    <!-- =========== button company =========== -->
 
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="far fa-envelope"></i>
-                        <div class="text-contact">
-                            <p>someone@gmail.com</p>
-                            <p>someone@gmail.com</p>
+                    <!-- =========== button personal =========== -->
+                    <div class="tab-pane fade" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+                        <div class="form-group">
+                            <label for="">الاسم الشخصي</label>
+                            <input type="text" class="form-control" placeholder="الاسم الكامل"
+                                aria-describedby="helpId">
                         </div>
-                    </div>
-                </div>
-                <!-- ======== contact card ======== -->
-            </div>
-        </div>
-    </section>
-    <!-- =========== ? contact =========== -->
 
-    <section class="contact-form">
-        <div class="container">
-            <h3>أو تواصل معنا من خلال إرسال رسالة نصية</h3>
-            <form action="#">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
                         <div class="form-group">
-                            <label for="">الاسم كاملا</label>
-                            <input type="text" name="" id="" class="form-control">
+                            <label for="">البريد الالكتروني</label>
+                            <input type="email" name="" id="" class="form-control" placeholder="بريدك الالكتروني"
+                                aria-describedby="helpId">
                         </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
+
                         <div class="form-group">
-                            <label for="">البريد الإلكتروني</label>
-                            <input type="emial" name="" id="" class="form-control">
+                            <label for="">رقم الجوال </label>
+                            <div class="phone_number">
+                                <input type="text" class="form-control" placeholder="رقم جوالك">
+                                <select class="selectpicker form-control">
+                                    <option value="0" data-content="+966 <span class='flag-icon flag-icon-sa'></span>"></option>
+                                    <option value="1" data-content="+20 <span class='flag-icon flag-icon-eg'></span>"></option>
+                                    <option value="2" data-content="+90 <span class='flag-icon flag-icon-tr'></span>"></option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
+
+                        <!-- ====== password ====== -->
                         <div class="form-group">
-                            <label for="">رقم الجوال</label>
-                            <input type="text" name="" id="" class="form-control">
+                            <label for="">كلمة المرور</label>
+                            <input type="password" id="txtPassword" name="txtPassword" class="form-control"
+                                placeholder="كلمة المرور">
+                            <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon"
+                                    class="fas fa-eye-slash"></i></button>
                         </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">الموضوع</label>
-                            <input type="text" name="" id="" class="form-control">
+                        <!-- ====== password ====== -->
+
+                        <!-- ====== Confrim password ====== -->
+                        <div class="form-group mt-3">
+                            <label for="">تأكيد كلمة المرور</label>
+                            <input type="password" id="txtPassword" name="txtPassword" class="form-control"
+                                placeholder="كلمة المرور">
+                            <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon"
+                                    class="fas fa-eye-slash"></i></button>
                         </div>
+                        <!-- ====== Confrim password ====== -->
+
+                        <!-- =========== show password =========== -->
+                        <script>
+                            let passwordInput = document.getElementById('txtPassword'),
+                                toggle = document.getElementById('btnToggle'),
+                                icon = document.getElementById('eyeIcon');
+
+                            function togglePassword() {
+                                if (passwordInput.type === 'password') {
+                                    passwordInput.type = 'text';
+                                    icon.classList.add("fa-eye-slash");
+                                    toggle.innerHTML = '<i class="fa fa-eye"></i>';
+                                } else {
+                                    passwordInput.type = 'password';
+                                    icon.classList.remove("fa-eye-slash");
+                                    toggle.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                                }
+                            }
+
+                            function checkInput() {
+                                //if (passwordInput.value === '') {
+                                //toggle.style.display = 'none';
+                                //toggle.innerHTML = 'show';
+                                //  passwordInput.type = 'password';
+                                //} else {
+                                //  toggle.style.display = 'block';
+                                //}
+                            }
+
+                            toggle.addEventListener('click', togglePassword, false);
+                            passwordInput.addEventListener('keyup', checkInput, false);
+                        </script>
+                        <!-- =========== show password =========== -->
+
+                        <button type="submit" class="signup-btn btn">إنشاء حساب</button>
+                        <span class="log">لديك حساب من قبل ؟ <a href="login.html">تسجيل الدخول</a> </span>
                     </div>
-    
-                    <div class="col-md-12 col-sm-12">
-                        <div class="form-group">
-                            <label for="">رسالتك</label>
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
-                        </div>
-                    </div>
+                    <!-- =========== button personal =========== -->
                 </div>
-                <button type="submit" class="btn">ارسال</button>
             </form>
         </div>
     </section>
+    <!-- =========== ? signup =========== -->
 
     <!-- ? ======= footer =========== -->
     <footer>
@@ -304,6 +340,11 @@
         </div>
     </footer>
     <!-- ? ======= footer =========== -->
+
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

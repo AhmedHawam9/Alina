@@ -64,7 +64,7 @@ body {
   align-items: center;
 }
 
-.nav-top .login {
+.nav-top .login-btn {
   color: #fff;
   text-decoration: none;
   font-family: "regular";
@@ -74,7 +74,7 @@ body {
   margin: 0 1%;
 }
 
-.nav-top .login:hover {
+.nav-top .login-btn:hover {
   color: #fff;
 }
 
@@ -822,7 +822,17 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   bottom: -5px;
   right: 0;
 }
-
+.blog .main-article{
+  text-decoration: none;
+  display: block;
+}
+.blog .map-article{
+  margin: 5% 0 0;
+}
+.blog .map-article p{
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
 .blog .main-article .img-article {
   width: 100%;
   border-radius: 8px;
@@ -889,6 +899,10 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .blog .article .date-article svg, .blog .article .name-article svg, .blog .article .type-truck-article svg {
   color: var(--color-secound);
   margin: 0 2%;
+}
+.blog .article_header{
+  width: 100%;
+  height: 750px;
 }
 
 /* ========== blog =========== */
@@ -2278,13 +2292,328 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   font-size: 1.5rem;
 }
 .blog .archives .month{
-  margin: 5% 0;
+  margin: 5%;
+  width: 90%;
 }
 .blog .archives .month ul{
   padding: 0;
-  list-style-image: url('../media/image/icon/ul.svg');
+  list-style-type: circle;
+}
+.blog .archives .month ul li{
+  font-family: "semibold";
+  color: var(--color-fourth);
+  margin: 2% 0;
+  font-size: 1.1rem;
 }
 /* ======= blog ======= */
+
+/* ======= Login ======= */
+.login{
+  background-color: #F7F7F7;
+  padding: 5% 0;
+}
+.login .form-login{
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5%;
+}
+.login .form-login label{
+  width: 100%;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  margin-bottom: 1%;
+}
+.login .form-login .phone_number{
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.login .form-login .phone_number input[type="text"]{
+  width: 75%;
+  display: inline-block;
+  height: 50px;
+  margin-left: 5%;
+  color: #999999;
+  border-radius: 8px;
+  font-family: "regular";
+}
+.login .form-login input[type="password"], .login .form-login input[type="text"]{
+  display: inline-block;
+  height: 40px;
+  color: #999999;
+  font-family: "regular";
+  border-radius: 8px;
+  height: 50px;
+}
+.login .form-login .phone_number .bootstrap-select{
+  width: 20% !important;
+  height: 50px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+.login .form-login .phone_number .bootstrap-select button{
+  background-color: #fff;
+  height: 100%;
+}
+.login .form-login .phone_number .bootstrap-select button .filter-option-inner{
+  height: 100%;
+}
+.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner, .login .form-login .dropdown-menu ul li .dropdown-item{
+  font-family: "semibold";
+  text-align: center;
+  color: #999999;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner span{
+  margin: 0 5%;
+}
+.login .form-login .phone_number .dropdown-toggle::after{
+  content: none;
+}
+.login .form-login .form-group{
+  position: relative;
+}
+.login .form-login .toggle {
+  background: none;
+  border: none;
+  outline: none;
+  color: #bfbfbf;
+  /* display: none; */
+  /* font-size: .9em; */
+  font-weight: 600;
+  /* padding: .5em; */
+  position: absolute;
+  left: 0.75em;
+  bottom: 11.5%;
+  z-index: 9;
+  cursor: pointer;
+}
+.login .form-login .btn-login{
+  background-color: var(--color-secound);
+  color: #fff;
+  font-family: "semibold";
+  border-radius: 8px;
+  width: 70%;
+  margin: 5% auto 0;
+  padding: 2% 0;
+  display: block;
+}
+.login .forget-password{
+  color: var(--color-secound);
+  font-family: "semibold";
+  text-decoration: none;
+  margin-top: 3%;
+  text-align: center;
+  display: block;
+}
+.login .not-signup{
+  color: var(--color-third);
+  font-family: "regular";
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+}
+.login .not-signup .signup-btn{
+  color: var(--color-secound);
+  font-family: "semibold";
+  text-decoration: none;
+}
+.login .form-login h4{
+  color: var(--color-fourth);
+  font-family: "semibold";
+  text-align: center;
+}
+.login .form-login p{
+  color: var(--color-fourth);
+  font-family: "regular";
+}
+.login .form-login .confirm{
+  color: #999999;
+  font-family: "regular";
+  text-align: center;
+  margin-top: 3%;
+  display: block;
+}
+/* ======= Login ======= */
+
+/* ======= signup ======= */
+.signup{
+  background-color: #F7F7F7;
+  padding: 5% 0;
+}
+.signup .form-signup{
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5%;
+}
+.signup .form-signup .nav-pills .nav-item{
+  width: 50%;
+}
+.signup .form-signup .nav-pills .nav-item .nav-link{
+  width: 90%;
+  color: var(--color-secound);
+  font-family: "semibold";
+  border: 1px solid var(--color-secound);
+  padding: 3% 0;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.signup .form-signup .nav-pills .nav-item .nav-link.active, .signup .form-signup .nav-pills .show>.nav-link{
+  background-color: var(--color-secound);
+  color: #fff;
+}
+.signup .form-signup label{
+  width: 100%;
+  font-family: "semibold";
+  color: var(--color-fourth);
+  margin-bottom: 1%;
+}
+.signup .form-signup .phone_number{
+  display: flex;
+}
+
+.signup .form-signup .phone_number input[type="text"]{
+  width: 75%;
+  display: inline-block;
+  height: 50px;
+  margin-left: 5%;
+  color: #999999;
+  border-radius: 8px;
+  font-family: "regular";
+}
+.signup .form-signup input[type="password"], .signup .form-signup input[type="text"], .signup .form-signup input[type="email"]{
+  display: inline-block;
+  height: 40px;
+  color: #999999;
+  font-family: "regular";
+  border-radius: 8px;
+  height: 50px;
+}
+.signup .form-signup .phone_number .bootstrap-select{
+  width: 20% !important;
+  height: 50px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+.signup .form-signup .phone_number .bootstrap-select button{
+  background-color: #fff;
+  height: 100%;
+}
+.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner{
+  height: 100%;
+}
+.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner-inner, .signup .form-signup .dropdown-menu ul li .dropdown-item{
+  font-family: "semibold";
+  text-align: center;
+  color: #999999;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner-inner span{
+  margin: 0 5%;
+}
+.signup .form-signup .phone_number .dropdown-toggle::after{
+  content: none;
+}
+.signup .form-signup .form-group{
+  position: relative;
+  width: 70%;
+  margin: 0 auto 3%;
+}
+.signup .form-signup .toggle {
+  background: none;
+  border: none;
+  outline: none;
+  color: #bfbfbf;
+  /* display: none; */
+  /* font-size: .9em; */
+  font-weight: 600;
+  /* padding: .5em; */
+  position: absolute;
+  left: 0.75em;
+  bottom: 13.5%;
+  z-index: 9;
+  cursor: pointer;
+}
+.signup .form-signup .btn-signup{
+  background-color: var(--color-secound);
+  color: #fff;
+  font-family: "semibold";
+  border-radius: 8px;
+  width: 70%;
+  margin: 5% auto 0;
+  padding: 2% 0;
+  display: block;
+}
+.signup .form-signup .signup-btn{
+  background-color: var(--color-secound);
+  color: #fff;
+  font-family: "semibold";
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5% 0;
+  border-radius: 8px;
+}
+.signup .form-signup .log{
+  margin-top: 4%;
+  display: block;
+  text-align: center;
+  font-family: "regular";
+  color: var(--color-third);
+}
+.signup .form-signup .log a{
+  font-family: "semibold";
+  color: var(--color-secound);
+}
+
+
+
+/* Toggle hide/show - no Js
+--------------------------------*/
+.toggle-box-region {background-color:#fff; border:1px solid #d9d9d9; padding:16px 18px;}
+.toggle-box {display:none;}
+.toggle-box + label {
+	color:#555;
+	cursor:pointer;
+	display:block;
+	font-weight:bold;
+	line-height:23px;
+	padding:.3em 0 .3em 26px;
+	position:relative;
+}
+
+.toggle-box + label + div {display:none; margin:0 0 14px;}
+.toggle-box:checked + label:nth-child(n) + div {display:block;}
+
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css"); 
+
+.toggle-box + label:before {
+	position:absolute;
+	content:'\2304';
+	font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+	top:.3em;
+	left:0px;
+	color:#0085a6;
+}
+.toggle-box:checked + label {color:#0085a6;}
+.toggle-box:checked + label:before {content:"\2303";}
+
+.box-test {
+  padding:3em;
+}
+
+/* ======= signup ======= */
 
 /* ======= privacy ======= */
 
@@ -2684,7 +3013,7 @@ footer .footer-bottom .my-heart {
   .nav-top .lang img {
     width: 20%;
   }
-  .nav-top .login {
+  .nav-top .login-btn {
     text-align: center;
   }
   .login-button {
@@ -2797,6 +3126,9 @@ footer .footer-bottom .my-heart {
   .blog .main-article .img-article {
     height: 300px;
   }
+  .blog .article_header{
+    height: 400px;
+  }
   .blog .article {
     align-items: center;
   }
@@ -2884,6 +3216,9 @@ footer .footer-bottom .my-heart {
   }
   .choose p, .choose .why-serv {
     width: 100%;
+  }
+  .login .form-login, .signup .form-signup, .signup .form-signup .form-group{
+    width: 85%;
   }
   footer .col-links {
     justify-content: center;
@@ -3027,5 +3362,11 @@ footer .footer-bottom .my-heart {
   }
   .choose h1 {
     margin: 15% 0 5%;
+  }
+  .blog .article_header{
+    height: 250px;
+  }
+  .login .form-login, .signup .form-signup, .signup .form-signup .form-group{
+    width: 100%;
   }
 }

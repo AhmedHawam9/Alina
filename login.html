@@ -14,6 +14,8 @@
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -24,6 +26,7 @@
     <!-- ? Main JavaScript -->
 
     <!-- ? Custom JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -96,102 +99,67 @@
     </nav>
     <!-- =========== ? NavBar =========== -->
 
-    <!-- =========== ? Header map =========== -->
-    <section class="header_map">
-        <div class="container-fluid p-0">
-            <img src="media/image/map.PNG" alt="map">
-        </div>
-    </section>
-    <!-- =========== ? Header map =========== -->
-
-    <!-- =========== ? contact =========== -->
-    <section class="contact-section">
+    <!-- =========== ? Login =========== -->
+    <section class="login">
         <div class="container">
-            <div class="row">
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="text-contact">
-                            <p>25 , شارع الملك عبد
-                                العزيزالحى الخامس , جدة</p>
-                        </div>
+            <form class="form-login" action="">
+                <div class="form-group">
+                    <label for="">رقم الجوال </label>
+                    <div class="phone_number">
+                        <input type="text" class="form-control" placeholder="رقم جوالك">
+                        <select class="selectpicker form-control">
+                            <option value="0" data-content="+966 <span class='flag-icon flag-icon-sa'></span>"></option>
+                            <option value="1" data-content="+20 <span class='flag-icon flag-icon-eg'></span>"></option>
+                            <option value="2" data-content="+90 <span class='flag-icon flag-icon-tr'></span>"></option>
+                        </select>
                     </div>
                 </div>
-                <!-- ======== contact card ======== -->
+                <div class="form-group">
+                    <label for="">كلمة المرور</label>
+                    <input type="password" id="txtPassword" name="txtPassword" class="form-control" placeholder="كلمة المرور">
+                    <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon"
+                        class="fas fa-eye-slash"></i></button>
+                </div>
+                <!-- =========== show password =========== -->
+                <script>
+                    let passwordInput = document.getElementById('txtPassword'),
+                        toggle = document.getElementById('btnToggle'),
+                        icon = document.getElementById('eyeIcon');
 
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <div class="text-contact">
-                            <p>+2688325458451</p>
-                            <p>+2688325458451</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ======== contact card ======== -->
+                    function togglePassword() {
+                        if (passwordInput.type === 'password') {
+                            passwordInput.type = 'text';
+                            icon.classList.add("fa-eye-slash");
+                            toggle.innerHTML = '<i class="fa fa-eye"></i>';
+                        } else {
+                            passwordInput.type = 'password';
+                            icon.classList.remove("fa-eye-slash");
+                            toggle.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                        }
+                    }
 
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="far fa-envelope"></i>
-                        <div class="text-contact">
-                            <p>someone@gmail.com</p>
-                            <p>someone@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ======== contact card ======== -->
-            </div>
-        </div>
-    </section>
-    <!-- =========== ? contact =========== -->
+                    function checkInput() {
+                        //if (passwordInput.value === '') {
+                        //toggle.style.display = 'none';
+                        //toggle.innerHTML = 'show';
+                        //  passwordInput.type = 'password';
+                        //} else {
+                        //  toggle.style.display = 'block';
+                        //}
+                    }
 
-    <section class="contact-form">
-        <div class="container">
-            <h3>أو تواصل معنا من خلال إرسال رسالة نصية</h3>
-            <form action="#">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">الاسم كاملا</label>
-                            <input type="text" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">البريد الإلكتروني</label>
-                            <input type="emial" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">رقم الجوال</label>
-                            <input type="text" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">الموضوع</label>
-                            <input type="text" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-12 col-sm-12">
-                        <div class="form-group">
-                            <label for="">رسالتك</label>
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="btn">ارسال</button>
+                    toggle.addEventListener('click', togglePassword, false);
+                    passwordInput.addEventListener('keyup', checkInput, false);
+                </script>
+                <!-- =========== show password =========== -->
+
+                <button type="submit" class="btn btn-login">تسجيل الدخول</button>
+                <a href="forget-password.html" class="forget-password">نسيت كلمة المرور ؟</a>
+                <span class="not-signup">ليس لديك حساب بعد ؟ <a href="signup.html" class="signup-btn"> إنشاء حساب </a></span>
             </form>
         </div>
     </section>
+    <!-- =========== ? Login =========== -->
 
     <!-- ? ======= footer =========== -->
     <footer>
@@ -304,6 +272,11 @@
         </div>
     </footer>
     <!-- ? ======= footer =========== -->
+
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
