@@ -215,7 +215,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 /*Styling Buttons*/
 
-.new-shipment {
+.new-shipment-btn {
   background-color: var(--color-secound);
   border-radius: 10px;
   color: #fff;
@@ -225,7 +225,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   cursor: pointer;
 }
 
-.new-shipment:hover {
+.new-shipment-btn:hover {
   background-color: transparent;
   color: var(--color-secound);
   background-color: #fff;
@@ -695,7 +695,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin-right: -42px;
   text-align: center;
   width: 40px;
-  box-shadow: inset 0px 0px 0px 3px white;
+  box-shadow: inset 0px 0px 0px 3px #fff;
   border: 2px solid var(--color-secound)
 }
 
@@ -822,17 +822,21 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   bottom: -5px;
   right: 0;
 }
-.blog .main-article{
+
+.blog .main-article {
   text-decoration: none;
   display: block;
 }
-.blog .map-article{
+
+.blog .map-article {
   margin: 5% 0 0;
 }
-.blog .map-article p{
+
+.blog .map-article p {
   font-family: "semibold";
   color: var(--color-fourth);
 }
+
 .blog .main-article .img-article {
   width: 100%;
   border-radius: 8px;
@@ -900,7 +904,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   color: var(--color-secound);
   margin: 0 2%;
 }
-.blog .article_header{
+
+.blog .article_header {
   width: 100%;
   height: 750px;
 }
@@ -2115,20 +2120,24 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   bottom: 0;
   right: 0;
 }
-.team .card .card-img-top{
+
+.team .card .card-img-top {
   height: 250px;
   border-radius: 8px;
 }
-.team .card .card-name{
+
+.team .card .card-name {
   font-family: "semibold";
   color: var(--color-fourth);
   font-size: 1.7rem;
 }
-.team .card .card-title{
+
+.team .card .card-title {
   font-family: "regular";
   color: var(--color-fourth);
 }
-.team .card .card-text{
+
+.team .card .card-text {
   font-family: "regular";
   color: #999999;
 }
@@ -2136,24 +2145,29 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 /* ======= Team ======= */
 
 /* ======= partner ======= */
-.partner{
+
+.partner {
   background-color: #F3F3F3;
   padding: 2% 0;
   margin: 5% 0;
 }
-.partner img{
+
+.partner img {
   width: 150px;
   height: 90px;
 }
+
 /* ======= partner ======= */
 
 /* ======= blog ======= */
-.blog .headlines .title_headlines{
+
+.blog .headlines .title_headlines {
   display: flex;
   align-items: center;
   height: 60px;
 }
-.blog .headlines .title_headlines h5{
+
+.blog .headlines .title_headlines h5 {
   box-shadow: 0 6px 12px rgba(180, 180, 180, .16);
   display: flex;
   align-items: center;
@@ -2164,7 +2178,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin: 0;
   padding: 0 5%;
 }
-.blog .headlines .title_headlines .icon{
+
+.blog .headlines .title_headlines .icon {
   width: 25%;
   height: 100%;
   background-color: #322473;
@@ -2174,25 +2189,30 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   justify-content: center;
   border-radius: 8px 0 0 8px;
 }
-.blog .headlines .title_headlines .icon svg{
+
+.blog .headlines .title_headlines .icon svg {
   font-size: 1.5rem;
 }
-.blog .headlines ul{
+
+.blog .headlines ul {
   list-style: none;
   padding: 0;
   width: 95%;
   margin: 5% auto;
 }
-.blog .headlines ul li{
+
+.blog .headlines ul li {
   display: flex;
 }
-.blog .headlines .name-headlines{
+
+.blog .headlines .name-headlines {
   width: 50%;
   font-family: "semibold";
   color: var(--color-fourth);
   font-size: 1.2rem;
 }
-.blog .headlines .number-headlines{
+
+.blog .headlines .number-headlines {
   width: 50%;
   text-align: end;
   font-family: "semibold";
@@ -2200,14 +2220,14 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   font-size: 1.2rem;
 }
 
-
-.blog .latest_posts .title_latest_posts{
+.blog .latest_posts .title_latest_posts {
   display: flex;
   align-items: center;
   height: 60px;
   margin-bottom: 10%;
 }
-.blog .latest_posts .title_latest_posts h5{
+
+.blog .latest_posts .title_latest_posts h5 {
   box-shadow: 0 6px 12px rgba(180, 180, 180, .16);
   display: flex;
   align-items: center;
@@ -2218,7 +2238,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin: 0;
   padding: 0 5%;
 }
-.blog .latest_posts .title_latest_posts .icon{
+
+.blog .latest_posts .title_latest_posts .icon {
   width: 25%;
   height: 100%;
   background-color: #322473;
@@ -2228,46 +2249,56 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   justify-content: center;
   border-radius: 8px 0 0 8px;
 }
-.blog .latest_posts .title_latest_posts .icon svg{
+
+.blog .latest_posts .title_latest_posts .icon svg {
   font-size: 1.5rem;
 }
-.blog .posts{
+
+.blog .posts {
   display: flex;
   margin: 5% 0;
   text-decoration: none;
 }
-.blog .posts img{
+
+.blog .posts img {
   width: 40%;
   border-radius: 8px;
 }
-.blog .posts .text-posts{
+
+.blog .posts .text-posts {
   width: 55%;
   margin-right: 5%;
 }
-.blog .posts .text-posts h5{
+
+.blog .posts .text-posts h5 {
   font-family: "semibold";
   color: var(--color-fourth);
 }
-.blog .posts .date-article{
+
+.blog .posts .date-article {
   width: 100%;
   display: inline-block;
   color: #707070;
   font-family: "regular";
   margin: 2% 0;
 }
-.blog .posts .date-article svg{
+
+.blog .posts .date-article svg {
   color: var(--color-secound);
   margin: 0 2%;
 }
-.blog .archives{
+
+.blog .archives {
   margin: 5% 0;
 }
-.blog .archives .title_archives{
+
+.blog .archives .title_archives {
   display: flex;
   align-items: center;
   height: 60px;
 }
-.blog .archives .title_archives h5{
+
+.blog .archives .title_archives h5 {
   box-shadow: 0 6px 12px rgba(180, 180, 180, .16);
   display: flex;
   align-items: center;
@@ -2278,7 +2309,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin: 0;
   padding: 0 5%;
 }
-.blog .archives .title_archives .icon{
+
+.blog .archives .title_archives .icon {
   width: 25%;
   height: 100%;
   background-color: #322473;
@@ -2288,49 +2320,58 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   justify-content: center;
   border-radius: 8px 0 0 8px;
 }
-.blog .archives .title_archives .icon svg{
+
+.blog .archives .title_archives .icon svg {
   font-size: 1.5rem;
 }
-.blog .archives .month{
+
+.blog .archives .month {
   margin: 5%;
   width: 90%;
 }
-.blog .archives .month ul{
+
+.blog .archives .month ul {
   padding: 0;
   list-style-type: circle;
 }
-.blog .archives .month ul li{
+
+.blog .archives .month ul li {
   font-family: "semibold";
   color: var(--color-fourth);
   margin: 2% 0;
   font-size: 1.1rem;
 }
+
 /* ======= blog ======= */
 
 /* ======= Login ======= */
-.login{
+
+.login {
   background-color: #F7F7F7;
   padding: 5% 0;
 }
-.login .form-login{
+
+.login .form-login {
   width: 50%;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 15px;
   padding: 5%;
 }
-.login .form-login label{
+
+.login .form-login label {
   width: 100%;
   font-family: "semibold";
   color: var(--color-fourth);
   margin-bottom: 1%;
 }
-.login .form-login .phone_number{
+
+.login .form-login .phone_number {
   display: flex;
   margin-bottom: 3%;
 }
 
-.login .form-login .phone_number input[type="text"]{
+.login .form-login .phone_number input[type="text"] {
   width: 75%;
   display: inline-block;
   height: 50px;
@@ -2339,7 +2380,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   border-radius: 8px;
   font-family: "regular";
 }
-.login .form-login input[type="password"], .login .form-login input[type="text"]{
+
+.login .form-login input[type="password"], .login .form-login input[type="text"] {
   display: inline-block;
   height: 40px;
   color: #999999;
@@ -2347,20 +2389,24 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   border-radius: 8px;
   height: 50px;
 }
-.login .form-login .phone_number .bootstrap-select{
+
+.login .form-login .phone_number .bootstrap-select {
   width: 20% !important;
   height: 50px;
   border: 1px solid #ced4da;
   border-radius: 8px;
 }
-.login .form-login .phone_number .bootstrap-select button{
+
+.login .form-login .phone_number .bootstrap-select button {
   background-color: #fff;
   height: 100%;
 }
-.login .form-login .phone_number .bootstrap-select button .filter-option-inner{
+
+.login .form-login .phone_number .bootstrap-select button .filter-option-inner {
   height: 100%;
 }
-.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner, .login .form-login .dropdown-menu ul li .dropdown-item{
+
+.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner, .login .form-login .dropdown-menu ul li .dropdown-item {
   font-family: "semibold";
   text-align: center;
   color: #999999;
@@ -2369,15 +2415,19 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   align-items: center;
   justify-content: center;
 }
-.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner span{
+
+.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner span {
   margin: 0 5%;
 }
-.login .form-login .phone_number .dropdown-toggle::after{
+
+.login .form-login .phone_number .dropdown-toggle::after {
   content: none;
 }
-.login .form-login .form-group{
+
+.login .form-login .form-group {
   position: relative;
 }
+
 .login .form-login .toggle {
   background: none;
   border: none;
@@ -2393,7 +2443,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   z-index: 9;
   cursor: pointer;
 }
-.login .form-login .btn-login{
+
+.login .form-login .btn-login {
   background-color: var(--color-secound);
   color: #fff;
   font-family: "semibold";
@@ -2403,7 +2454,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   padding: 2% 0;
   display: block;
 }
-.login .forget-password{
+
+.login .forget-password {
   color: var(--color-secound);
   font-family: "semibold";
   text-decoration: none;
@@ -2411,52 +2463,65 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   text-align: center;
   display: block;
 }
-.login .not-signup{
+
+.login .not-signup {
   color: var(--color-third);
   font-family: "regular";
   display: block;
   text-align: center;
   margin-top: 5%;
 }
-.login .not-signup .signup-btn{
+
+.login .not-signup .signup-btn {
   color: var(--color-secound);
   font-family: "semibold";
   text-decoration: none;
 }
-.login .form-login h4{
+
+.login .form-login h4 {
   color: var(--color-fourth);
   font-family: "semibold";
   text-align: center;
 }
-.login .form-login p{
+
+.login .form-login p {
   color: var(--color-fourth);
   font-family: "regular";
 }
-.login .form-login .confirm{
+
+.login .form-login .confirm {
   color: #999999;
   font-family: "regular";
   text-align: center;
   margin-top: 3%;
   display: block;
 }
+
 /* ======= Login ======= */
 
 /* ======= signup ======= */
-.signup{
+
+.signup {
   background-color: #F7F7F7;
   padding: 5% 0;
 }
-.signup .form-signup{
+
+.signup .form-signup {
   width: 70%;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 15px;
+}
+
+.signup .form-signup .nav-pills {
   padding: 5%;
 }
-.signup .form-signup .nav-pills .nav-item{
+
+.signup .form-signup .nav-pills .nav-item {
   width: 50%;
 }
-.signup .form-signup .nav-pills .nav-item .nav-link{
+
+.signup .form-signup .nav-pills .nav-item .nav-link {
   width: 90%;
   color: var(--color-secound);
   font-family: "semibold";
@@ -2465,22 +2530,90 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   border-radius: 10px;
   margin: 0 auto;
 }
-.signup .form-signup .nav-pills .nav-item .nav-link.active, .signup .form-signup .nav-pills .show>.nav-link{
+
+.signup .form-signup .nav-pills .nav-item .nav-link.active, .signup .form-signup .nav-pills .show>.nav-link {
   background-color: var(--color-secound);
   color: #fff;
 }
-.signup .form-signup label{
+
+.signup .form-signup label {
   width: 100%;
   font-family: "semibold";
   color: var(--color-fourth);
   margin-bottom: 1%;
 }
-.signup .form-signup .phone_number{
+
+.signup .form-signup .box-test label {
+  color: var(--color-fourth);
+  font-family: "semibold";
+  background-color: #EDEDED;
+  padding: 2.5%;
+  margin-bottom: 3%;
+}
+
+.signup .form-signup .box-test .form-group label {
+  background-color: transparent;
+  margin-bottom: 1%;
+  padding: 0;
+  width: 100%;
+}
+
+.signup .form-signup .box-test .form-group input[type='radio'] {
+  width: 80px;
+  height: 50px;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.signup .form-signup .box-test .form-group input[type="radio"]:checked, .signup .form-signup .box-test .form-group .Checked {
+  background: var(--color-primary);
+}
+
+.signup .form-signup .box-test .form-group input[type="radio"]:checked+label, .signup .form-signup .box-test .form-group .Checked+label {
+  color: #fff;
+}
+
+.signup .form-signup .box-test .true, .signup .form-signup .box-test .wrong {
+  display: inline-block;
+  position: relative;
+}
+
+.signup .form-signup .box-test .true label, .signup .form-signup .box-test .wrong label {
+  position: absolute;
+  top: 25%;
+  text-align: center;
+  pointer-events: none;
+  color: var(--color-primary);
+}
+
+.signup .form-signup .box-test .form-group svg {
+  color: #999999;
+  position: absolute;
+  top: 58%;
+  right: 7%;
+}
+
+.signup .form-signup .box-test .toggle-box-content {
+  padding: 0 5%;
+}
+
+.signup .form-signup .box-test .toggle-box-content .form-group {
+  width: unset;
+  margin: 0 0 3%;
+}
+
+.signup .form-signup .box-test .toggle-box-content p {
+  font-family: "regular";
+  color: var(--color-fourth);
+}
+
+.signup .form-signup .phone_number {
   display: flex;
 }
 
-.signup .form-signup .phone_number input[type="text"]{
-  width: 75%;
+.signup .form-signup .phone_number input[type="text"] {
+  width: 80%;
   display: inline-block;
   height: 50px;
   margin-left: 5%;
@@ -2488,28 +2621,104 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   border-radius: 8px;
   font-family: "regular";
 }
-.signup .form-signup input[type="password"], .signup .form-signup input[type="text"], .signup .form-signup input[type="email"]{
+
+.signup .form-signup .address_phone_number input[type="text"] {
+  border-radius: 8px 0 0 8px;
+}
+
+.signup .form-signup .address_phone_number .bootstrap-select {
+  border-radius: 0 8px 8px 0 !important;
+}
+
+.signup .form-signup input[type="password"], .signup .form-signup input[type="text"], .signup .form-signup input[type="email"], .signup .form-signup input[type="number"], .signup .form-signup input[type="file"] {
   display: inline-block;
-  height: 40px;
   color: #999999;
   font-family: "regular";
   border-radius: 8px;
   height: 50px;
 }
-.signup .form-signup .phone_number .bootstrap-select{
+
+.signup .form-signup .border {
+  color: #999999;
+  font-family: "regular";
+  border-radius: 8px;
+  height: 50px;
+  border: 1px solid #ced4da !important;
+}
+
+.signup .form-signup input[type='file'] {
+  opacity: 0
+}
+
+.signup .form-signup .val {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 37%;
+  color: #999999;
+  font-family: "regular";
+  right: 10%;
+  line-height: 50px;
+  text-indent: 10px;
+  pointer-events: none;
+}
+
+.signup .form-signup #button {
+  cursor: pointer;
+  display: block;
+  width: 90px;
+  background-color: purple;
+  height: 25px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 11px;
+  line-height: 25px;
+  text-align: center;
+  -webkit-transition: 500ms all;
+  -moz-transition: 500ms all;
+  transition: 500ms all;
+}
+
+.signup .form-signup #button:hover {
+  background-color: blue;
+}
+
+.signup .form-signup input::-webkit-outer-spin-button, .signup .form-signup input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.signup .form-signup .phone_number .bootstrap-select {
   width: 20% !important;
   height: 50px;
   border: 1px solid #ced4da;
   border-radius: 8px;
 }
-.signup .form-signup .phone_number .bootstrap-select button{
+
+.signup .form-signup .phone_number .bootstrap-select button {
   background-color: #fff;
   height: 100%;
+  border-radius: 8px;
 }
-.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner{
+
+.signup .form-signup button[type='submit'] {
+  background-color: var(--color-secound);
+  color: #fff;
+  font-family: "semibold";
+  width: 25%;
+  margin: 0 auto;
+  display: block;
+  padding: 1.25% 0;
+  border-radius: 8px;
+}
+
+.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner {
   height: 100%;
 }
-.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner-inner, .signup .form-signup .dropdown-menu ul li .dropdown-item{
+
+.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner-inner, .signup .form-signup .dropdown-menu ul li .dropdown-item {
   font-family: "semibold";
   text-align: center;
   color: #999999;
@@ -2518,17 +2727,21 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   align-items: center;
   justify-content: center;
 }
-.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner-inner span{
+
+.signup .form-signup .phone_number .bootstrap-select button .filter-option-inner-inner span {
   margin: 0 5%;
 }
-.signup .form-signup .phone_number .dropdown-toggle::after{
+
+.signup .form-signup .phone_number .dropdown-toggle::after {
   content: none;
 }
-.signup .form-signup .form-group{
+
+.signup .form-signup .form-group {
   position: relative;
   width: 70%;
   margin: 0 auto 3%;
 }
+
 .signup .form-signup .toggle {
   background: none;
   border: none;
@@ -2544,7 +2757,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   z-index: 9;
   cursor: pointer;
 }
-.signup .form-signup .btn-signup{
+
+.signup .form-signup .btn-signup {
   background-color: var(--color-secound);
   color: #fff;
   font-family: "semibold";
@@ -2554,7 +2768,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   padding: 2% 0;
   display: block;
 }
-.signup .form-signup .signup-btn{
+
+.signup .form-signup .signup-btn {
   background-color: var(--color-secound);
   color: #fff;
   font-family: "semibold";
@@ -2564,56 +2779,444 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   padding: 1.5% 0;
   border-radius: 8px;
 }
-.signup .form-signup .log{
+
+.signup .form-signup .log {
   margin-top: 4%;
   display: block;
   text-align: center;
   font-family: "regular";
   color: var(--color-third);
 }
-.signup .form-signup .log a{
+
+.signup .form-signup .log a {
   font-family: "semibold";
   color: var(--color-secound);
 }
 
-
-
 /* Toggle hide/show - no Js
 --------------------------------*/
-.toggle-box-region {background-color:#fff; border:1px solid #d9d9d9; padding:16px 18px;}
-.toggle-box {display:none;}
-.toggle-box + label {
-	color:#555;
-	cursor:pointer;
-	display:block;
-	font-weight:bold;
-	line-height:23px;
-	padding:.3em 0 .3em 26px;
-	position:relative;
+
+.toggle-box-region {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding: 16px 18px;
 }
 
-.toggle-box + label + div {display:none; margin:0 0 14px;}
-.toggle-box:checked + label:nth-child(n) + div {display:block;}
+.toggle-box {
+  display: none;
+}
 
-@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css"); 
+.toggle-box+label {
+  color: #555;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 23px;
+  padding: .3em 0 .3em 26px;
+  position: relative;
+}
 
-.toggle-box + label:before {
-	position:absolute;
-	content:'\2304';
-	font-family: "Font Awesome 5 Free";
+.toggle-box+label+div {
+  display: none;
+  margin: 0 0 14px;
+}
+
+.toggle-box:checked+label:nth-child(n)+div {
+  display: block;
+}
+
+@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
+.toggle-box+label:before {
+  position: absolute;
+  content: '\f078';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-	top:.3em;
-	left:0px;
-	color:#0085a6;
+  top: 35%;
+  left: 15px;
+  color: #000;
 }
-.toggle-box:checked + label {color:#0085a6;}
-.toggle-box:checked + label:before {content:"\2303";}
 
-.box-test {
-  padding:3em;
+.toggle-box:checked+label {
+  color: #000;
+}
+
+.toggle-box:checked+label:before {
+  content: "\f077";
+  color: #000;
 }
 
 /* ======= signup ======= */
+
+/* ======== start profile ======== */
+
+.profile {
+  background-color: #F7F7F7;
+  text-align: start;
+  padding: 100px 0;
+}
+
+.profile .tabs .nav-pills {
+  margin-left: 50px;
+  box-shadow: 0 3px 6px rgb(230 230 230);
+}
+
+.profile .tabs .nav-pills .nav-link {
+  padding: 6% 2%;
+  text-align: start;
+  background-color: #fff;
+  color: #4E4E4E;
+  border-radius: 5px;
+  font-family: regular;
+  position: relative;
+}
+
+.profile .tabs .nav-pills .nav-link span {
+  position: absolute;
+  left: 0%;
+}
+
+.profile .tabs .nav-pills .active {
+  background-color: var(--color-primary);
+  color: #fff;
+  position: relative;
+}
+
+.profile .tabs .nav-pills .nav-link svg {
+  margin-left: 10px;
+}
+
+.profile .tabs .tab-content .welcome {
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgb(156 156 156 /.16);
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.profile .tabs .tab-content .welcome h6 {
+  font-family: "semibold";
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.profile .tabs .tab-content .welcome a {
+  font-family: regular;
+  padding: 1%;
+  background-color: #FFA403;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.profile .tabs .tab-content .new-shipment {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-family: "semibold";
+  cursor: pointer;
+}
+
+.profile .tabs .tab-content .new-shipment img {
+  width: 10%;
+  margin-top: 20px;
+}
+
+.profile .tabs .tab-content .new-shipment h6 {
+  padding: 3% 0;
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+
+.profile .tabs .tab-content .my-shipment {
+  background-color: #fff;
+  font-family: regular;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgb(156 156 156 /.16);
+  padding-bottom: 30px;
+}
+
+.profile .tabs .tab-content .my-shipment h3 {
+  text-align: center;
+  padding: 3% 0 0;
+  color: var(--color-fourth);
+  font-family: "semibold";
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto 5%;
+  width: fit-content;
+}
+
+.profile .tabs .tab-content .my-shipment h3::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 2px;
+  background-color: #FFCC03;
+  bottom: 0;
+  right: 20%;
+}
+
+.profile .tabs .tab-content .my-shipment .first-card {
+  background-color: #F7F7F7;
+  width: 95%;
+  margin: auto;
+  padding: 3%;
+}
+
+.profile .tabs .tab-content .my-shipment .first-card h3 {
+  color: var(--color-fourth);
+  font-family: "semibold";
+  display: block;
+  text-align: start;
+  margin: 0;
+}
+
+.profile .tabs .tab-content .my-shipment .first-card h3::after {
+  content: unset;
+}
+
+.profile .tabs .tab-content .my-shipment .first-card .info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.profile .tabs .tab-content .my-shipment .first-card .info span {
+  color: #999999;
+  font-size: .8rem;
+}
+
+.profile .tabs .tab-content .my-shipment .first-card .info li {
+  margin-top: 10px;
+  font-family: "semibold";
+  font-size: 1.1rem;
+  width: 20%;
+  list-style: none;
+}
+
+.profile .tabs .tab-content .my-shipment .first-card .notes-track {
+  width: 100%;
+  font-family: "regular";
+}
+
+.profile .tabs .tab-content .my-shipment .first-card h4 {
+  font-family: "semibold";
+}
+
+.profile .tabs .tab-content .my-shipment .first-card a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-family: "semibold";
+}
+
+.profile .tabs .tab-content .setting {
+  background-color: #fff;
+  padding: 3% 2%;
+  border-radius: 7px;
+}
+
+.profile .tabs .tab-content .setting h5 {
+  font-family: "regular";
+  margin-bottom: 30px;
+}
+
+.profile .tabs .tab-content .setting label, .profile .tabs .tab-content .setting input, .profile .tabs .tab-content .setting .bootstrap-select {
+  font-family: "regular";
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.profile .tabs .tab-content .setting label {
+  font-family: "semibold";
+}
+
+.profile .tabs .tab-content .setting .form-group {
+  width: 70%;
+}
+
+.profile .tabs .tab-content .setting input {
+  color: #999999;
+  border-radius: 8px;
+}
+
+.profile .tabs .tab-content .setting .bootstrap-select {
+  width: 100%;
+}
+
+.profile .tabs .tab-content .setting .bootstrap-select button {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.profile .tabs .tab-content .setting .bootstrap-select button .filter-option-inner-inner {
+  text-align: start;
+  color: #999999;
+  font-family: "regular";
+}
+
+.profile .tabs .tab-content .setting .bootstrap-select .dropdown-menu li .dropdown-item.active {
+  background-color: var(--color-secound);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: var(--color-secound) !important;
+}
+
+.profile .tabs .tab-content .setting .form-select {
+  width: 70%;
+  background-position: left;
+  background-size: 25px 9px;
+  padding-right: 14px;
+  border-color: #DEDEDE !important;
+  border-radius: 8px;
+}
+
+.profile .tabs .tab-content .setting input::placeholder {
+  padding-bottom: 5px;
+  color: #999999;
+}
+
+.profile .tabs .tab-content .setting button[type='submit'] {
+  background-color: #FFA403;
+  color: #fff;
+  font-family: "semibold";
+  padding: 9px 1%;
+  width: 25%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.profile .tabs .tab-content .mangment {
+  background-color: #fff;
+  font-family: regular;
+  padding: 3%;
+}
+
+.profile .tabs .tab-content .mangment h3 {
+  text-align: center;
+  padding: 3% 0 0;
+  color: var(--color-fourth);
+  font-family: "semibold";
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto 5%;
+  width: fit-content;
+}
+
+.profile .tabs .tab-content .mangment h3::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 2px;
+  background-color: #FFCC03;
+  bottom: -10%;
+  right: 25%;
+}
+
+.profile .tabs .tab-content .mangment p {
+  text-align: center;
+  color: #4625AC;
+}
+
+.profile .tabs .tab-content .mangment label {
+  margin-bottom: 10px;
+  color: var(--color-fourth);
+  font-family: "semibold";
+}
+
+.profile .tabs .tab-content .mangment input {
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.profile .tabs .tab-content .mangment .form-group{
+  width: 70%;
+}
+.profile .tabs .tab-content .mangment .form-group .bootstrap-select button{
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+.profile .tabs .tab-content .mangment .form-group .filter-option-inner-inner{
+  text-align: start;
+}
+.profile .tabs .tab-content .mangment input::-webkit-outer-spin-button,
+.profile .tabs .tab-content .mangment input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.profile .tabs .tab-content .mangment input::placeholder {
+  padding-bottom: 5px;
+  color: #999999;
+}
+
+.profile .tabs .tab-content .mangment button[type="submit"] {
+  background-color: #FFA403;
+  color: #fff;
+  font-family: regular;
+  padding: 9px 1%;
+  width: 25%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.profile .tabs .tab-content .mangment .dropdown-menu li a{
+  text-align: start;
+}
+.profile .continue {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgb(200 200 200 /.16);
+  padding: 3%;
+  margin: 50px 12px 0 50px;
+  text-align: center;
+}
+
+.profile .continue h5 {
+  padding-top: 20px;
+  font-family: bold;
+  padding-bottom: 15px;
+  font-family: "semibold";
+}
+
+.profile .continue label {
+  text-align: start;
+  font-family: "regular";
+  margin: 15px 0 5px;
+  display: block;
+}
+
+.profile .continue input {
+  background-color: #F2F2F2;
+  border-color: transparent !important;
+  padding: 5% 2%;
+  font-family: "semibold";
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+}
+
+.profile .continue input::placeholder {
+  color: #999999;
+}
+
+.profile .continue button[type='submit'] {
+  background-color: #FFA403;
+  color: #fff;
+  font-family: regular;
+  padding: 9px 1%;
+  width: 100%;
+  border-radius: 8px;
+  margin: 25px auto;
+}
+
+/* ======== finish profile ======== */
 
 /* ======= privacy ======= */
 
@@ -3126,7 +3729,7 @@ footer .footer-bottom .my-heart {
   .blog .main-article .img-article {
     height: 300px;
   }
-  .blog .article_header{
+  .blog .article_header {
     height: 400px;
   }
   .blog .article {
@@ -3217,8 +3820,60 @@ footer .footer-bottom .my-heart {
   .choose p, .choose .why-serv {
     width: 100%;
   }
-  .login .form-login, .signup .form-signup, .signup .form-signup .form-group{
+  .login .form-login, .signup .form-signup, .signup .form-signup .form-group {
     width: 85%;
+  }
+  .profile .tabs {
+    display: block !important;
+    justify-content: center !important;
+  }
+  .profile .continue {
+    margin: 25px auto;
+  }
+  .profile .tabs .nav-pills {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+  .profile .tabs .nav-pills .nav-link {
+    padding: 4% 2%;
+    width: 33.3%;
+    font-size: 9px;
+    text-align: center;
+  }
+  .profile .tabs .nav-pills .nav-link svg {
+    margin-left: 5px;
+  }
+  .profile .tabs .nav-pills .nav-link span {
+    display: none;
+  }
+  .profile .tabs .tab-content {
+    width: 100%;
+  }
+  .profile .tabs .tab-content .welcome {
+    margin-top: 27px;
+  }
+  .profile .tabs .tab-content .welcome h6 {
+    font-size: 10px;
+  }
+  .profile .tabs .tab-content .welcome a {
+    padding-top: 5px;
+  }
+  .profile .continue input {
+    padding: 3% 2%;
+  }
+  .profile .tabs .tab-content .setting h5 {
+    margin-bottom: 13px;
+    font-size: 15px;
+  }
+  .profile .tabs .tab-content .setting label, .profile .tabs .tab-content .setting input, .profile .tabs .tab-content .setting .form-select {
+    margin-bottom: 11px;
+  }
+  .profile .tabs .tab-content .setting a, .profile .tabs .tab-content .mangment a {
+    padding: 5px 1%;
+    width: 45%;
   }
   footer .col-links {
     justify-content: center;
@@ -3363,10 +4018,21 @@ footer .footer-bottom .my-heart {
   .choose h1 {
     margin: 15% 0 5%;
   }
-  .blog .article_header{
+  .blog .article_header {
     height: 250px;
   }
-  .login .form-login, .signup .form-signup, .signup .form-signup .form-group{
+  .login .form-login, .signup .form-signup, .signup .form-signup .form-group {
     width: 100%;
+    padding: 0 2%;
+  }
+  .signup .form-signup button[type='submit'] {
+    width: 40%;
+    padding: 2.25% 0;
+  }
+  .signup .form-signup .nav-pills .nav-item .nav-link {
+    padding: 5% 0;
+  }
+  .toggle-box+label:before {
+    top: 25%;
   }
 }
