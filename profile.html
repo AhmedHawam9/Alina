@@ -15,6 +15,7 @@
 
     <!-- ? Custom CSS -->
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
     <!-- ? Custom CSS -->
 
@@ -25,11 +26,9 @@
     <script src="js/fontawesome.min.js"></script>
     <!-- ? Main JavaScript -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- ? Custom JavaScript -->
     <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -96,8 +95,8 @@
             <li><a href="about.html">عن الشركه</a></li>
             <li><a href="contact.html">اتصل بنا</a></li>
             <li><a href="blog.html">مدونة</a></li>
-            <li><button class="new-shipment-btn btn" onclick="window.open('advertise.html', '_self')">شحنة
-                    جديدة</button>
+            <li><a href="new_shipment.html" class="new-shipment-btn btn">شحنة
+                    جديدة</a>
             </li>
         </ul>
     </nav>
@@ -109,6 +108,7 @@
             <div class="row">
                 <div class="d-flex align-items-start tabs">
                     <div class=" col-lg-4 col-md-12 col-sm-12 ">
+                        <!-- ====== Vertical nav ====== -->
                         <div class="nav flex-column nav-pills me-3 " id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
                             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
@@ -124,8 +124,9 @@
                                 data-bs-target="#v-pills-messages" type="button" role="tab"
                                 aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cube"></i>
                                 شحناتي <span><i class="fas fa-chevron-left"></i></span> </button>
-
                         </div>
+                        <!-- ====== Vertical nav ====== -->
+
                         <div class="continue  ">
                             <h5>تتبع الشحنات</h5>
                             <img src="media/image/icon/world.png" alt="world">
@@ -140,6 +141,7 @@
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12">
                         <div class="tab-content" id="v-pills-tabContent">
+                            <!-- ===== My Control Panel ===== -->
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
                                 <div class="welcome">
@@ -173,6 +175,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- ===== My Control Panel ===== -->
+
+                            <!-- ===== my personal account ===== -->
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
                                 <div class="welcome">
@@ -181,18 +186,28 @@
                                 </div>
                                 <form class="form setting ">
                                     <h5>اعدادات الملف الشخصي</h5>
+                                    <!-- first name -->
                                     <div class="form-group">
                                         <label>الاسم الأول</label>
                                         <input type="text" class="form-control" placeholder="الاسم الاول">
                                     </div>
+                                    <!-- first name -->
+
+                                    <!-- second name -->
                                     <div class="form-group">
                                         <label>الاسم الثاني</label>
                                         <input type="text" class="form-control" placeholder="الاسم الثاني">
                                     </div>
+                                    <!-- second name -->
+
+                                    <!-- company name -->
                                     <div class="form-group">
                                         <label>الاسم الشركة</label>
                                         <input type="text" class="form-control" placeholder="الاسم الشركة">
                                     </div>
+                                    <!-- company name -->
+
+                                    <!-- country -->
                                     <div class="form-group">
                                         <label for="floatingSelect">البلد </label>
                                         <select class="selectpicker">
@@ -202,6 +217,9 @@
                                             <option value="3">السودان</option>
                                         </select>
                                     </div>
+                                    <!-- country -->
+
+                                    <!-- city -->
                                     <div class="form-group">
                                         <label for="floatingSelect">المدينة </label>
                                         <select class="selectpicker" id="floatingSelect1"
@@ -212,23 +230,37 @@
                                             <option value="3">المحلة الكبري</option>
                                         </select>
                                     </div>
+                                    <!-- city -->
+
+                                    <!-- address -->
                                     <div class="form-group">
                                         <label for="inputAddress" class="form-label">العنوان</label>
                                         <input type="text" class="form-control" id="inputAddress"
                                             placeholder="العنوان  ">
                                     </div>
+                                    <!-- address -->
+
+                                    <!-- second address -->
                                     <div class="form-group">
                                         <label for="inputAddress1" class="form-label">العنوان الثاني</label>
                                         <input type="text" class="form-control" id="inputAddress1"
                                             placeholder="العنوان  ">
                                     </div>
+                                    <!-- second address -->
+
+                                    <!-- phone number -->
                                     <div class="form-group">
                                         <label> رقم الهاتف</label>
                                         <input type="tel" class="form-control" placeholder=" رقم الهاتف">
                                     </div>
+                                    <!-- phone number -->
+
                                     <button type="submit" class="btn">حفظ</button>
                                 </form>
                             </div>
+                            <!-- ===== my personal account ===== -->
+
+                            <!-- ===== my shipments ===== -->
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab">
                                 <div class="welcome">
@@ -239,42 +271,76 @@
                                     <h3>إدراة شحناتي</h3>
                                     <p>يمكنك الآن البحث عن شحناتك من خلال ملىء البيانات التالية</p>
                                     <form action="">
+                                        <!-- delivery number -->
                                         <div class="form-group">
-                                            <label for="number" class="form-label"> رقم الشحنة</label>
+                                            <label for="number" class="form-label">رقم الشحنة</label>
                                             <input class="form-control" type="number" placeholder="رقم الشحنة "
                                                 id="number">
                                         </div>
+                                        <!-- delivery number -->
+
+                                        <!-- Shipment reference -->
                                         <div class="form-group">
-                                            <label for="number1" class="form-label"> مرجع الشحنة</label>
+                                            <label for="number1" class="form-label">مرجع الشحنة</label>
                                             <input class="form-control" type="text" placeholder="مرجع الشحنة "
                                                 id="number1">
                                         </div>
+                                        <!-- Shipment reference -->
+
+                                        <!-- The recipient's name -->
                                         <div class="form-group">
-                                            <label for="number2" class="form-label"> اسم المستلم</label>
+                                            <label for="number2" class="form-label">اسم المستلم</label>
                                             <input class="form-control" type="text" placeholder="أسم المستلم "
                                                 id="number2">
                                         </div>
+                                        <!-- The recipient's name -->
+
+                                        <!-- Date from -->
                                         <div class="form-group">
                                             <label for="datepicker">التاريخ من </label><br>
-                                            <input type="date" id="datepicker" class="form-control datepicker" autocomplete="off">
+                                            <input type="text" id="datepicker" class="form-control datepicker"
+                                                autocomplete="off">
+                                            <i class="far fa-calendar-alt"></i>
+                                            <script>
+                                                $(function () {
+                                                    $("#datepicker").datepicker().datepicker('setDate', new Date());
+                                                });
+                                            </script>
                                         </div>
+                                        <!-- Date from -->
+
+                                        <!-- Date to -->
                                         <div class="form-group">
-                                            <label for="datepicker1">التاريخ الي </label>
-                                            <input type="date" id="datepicker1" class="form-control" autocomplete="off">
+                                            <label for="datepicker">التاريخ الي </label>
+                                            <input type="text" id="datepicker1" class="form-control datepicker"
+                                                autocomplete="off">
+                                            <i class="far fa-calendar-alt"></i>
+                                            <script>
+                                                $(function () {
+                                                    $("#datepicker1").datepicker().datepicker('setDate', new Date());
+                                                });
+                                            </script>
                                         </div>
+                                        <!-- Date to -->
+
+                                        <!-- Shipment Status -->
                                         <div class="form-group">
-                                            <label for="exampleDataList" class="form-label">حالة الشحنة </label>
-                                            <select name="" id="" class="form-control selectpicker" title="أبحث عن الحالة الذي تريدها">
+                                            <label for="exampleDataList" class="form-label">حالة الشحنة</label>
+                                            <select name="" id="" class="form-control selectpicker"
+                                                title="أبحث عن الحالة الذي تريدها">
                                                 <option value="0">الكل</option>
                                                 <option value="1">طيران</option>
                                                 <option value="2">نهري</option>
                                                 <option value="3">بري</option>
                                             </select>
                                         </div>
+                                        <!-- Shipment Status -->
+
                                         <button type="submit" class="btn">بحث</button>
                                     </form>
                                 </div>
                             </div>
+                            <!-- ===== my shipments ===== -->
                         </div>
                     </div>
                 </div>

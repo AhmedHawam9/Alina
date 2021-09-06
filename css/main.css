@@ -141,6 +141,19 @@ nav .nav-links li a.active {
   padding: 10% 0;
 }
 
+nav .nav-links li:last-child a.active {
+  background-color: transparent;
+  color: var(--color-secound) !important;
+  background-color: #fff;
+  border: 1.5px solid var(--color-secound);
+  transition: all ease-in-out 1s;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-family: "semibold" !important;
+  cursor: pointer;
+}
+
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
   color: var(--color-primary);
 }
@@ -218,16 +231,16 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .new-shipment-btn {
   background-color: var(--color-secound);
   border-radius: 10px;
-  color: #fff;
+  color: #fff !important;
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
-  font-family: "semibold";
+  font-family: "semibold" !important;
   cursor: pointer;
 }
 
 .new-shipment-btn:hover {
   background-color: transparent;
-  color: var(--color-secound);
+  color: var(--color-secound) !important;
   background-color: #fff;
   border: 1.5px solid var(--color-secound);
   transition: all ease-in-out 1s;
@@ -3136,22 +3149,35 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .profile .tabs .tab-content .mangment input {
   margin-bottom: 10px;
   border-radius: 8px;
+  direction: rtl;
 }
-.profile .tabs .tab-content .mangment .form-group{
+
+.profile .tabs .tab-content .mangment svg {
+  position: absolute;
+  left: 3%;
+  top: 63%;
+  color: var(--color-secound);
+}
+
+.profile .tabs .tab-content .mangment .form-group {
   width: 70%;
+  position: relative;
 }
-.profile .tabs .tab-content .mangment .form-group .bootstrap-select button{
+
+.profile .tabs .tab-content .mangment .form-group .bootstrap-select button {
   background-color: transparent;
   border: 1px solid #ced4da;
 }
-.profile .tabs .tab-content .mangment .form-group .filter-option-inner-inner{
+
+.profile .tabs .tab-content .mangment .form-group .filter-option-inner-inner {
   text-align: start;
 }
-.profile .tabs .tab-content .mangment input::-webkit-outer-spin-button,
-.profile .tabs .tab-content .mangment input::-webkit-inner-spin-button {
+
+.profile .tabs .tab-content .mangment input::-webkit-outer-spin-button, .profile .tabs .tab-content .mangment input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .profile .tabs .tab-content .mangment input::placeholder {
   padding-bottom: 5px;
   color: #999999;
@@ -3166,9 +3192,11 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   border-radius: 8px;
   margin-top: 20px;
 }
-.profile .tabs .tab-content .mangment .dropdown-menu li a{
+
+.profile .tabs .tab-content .mangment .dropdown-menu li a {
   text-align: start;
 }
+
 .profile .continue {
   background-color: #fff;
   border-radius: 8px;
@@ -3217,6 +3245,355 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 /* ======== finish profile ======== */
+
+/* ======== new_shipment ======== */
+
+.new_shipment .nav-pills {
+  width: 16%;
+  margin: 0 2%;
+}
+
+.new_shipment .nav-pills .nav-link {
+  text-align: start;
+  color: var(--color-third);
+  font-family: "regular";
+  opacity: .7;
+  padding: 15% 0;
+}
+
+.new_shipment .nav-pills .nav-link.active, .new_shipment .nav-pills .show>.nav-link {
+  color: var(--color-fourth);
+  font-family: "semibold";
+  background-color: transparent;
+  opacity: 1;
+}
+
+.new_shipment .nav-pills .nav-link img {
+  width: 50px;
+  height: 50px;
+}
+
+.new_shipment .tab-content {
+  width: 80%;
+  padding: 3% 2%;
+  border-right: 1px solid #CFCFCF;
+}
+
+.new_shipment .tab-content h3 {
+  color: var(--color-fourth);
+  font-family: "semibold";
+}
+
+.new_shipment .tab-content .form-group {
+  margin-bottom: 3%;
+}
+
+.new_shipment .tab-content .form-group label {
+  color: var(--color-fourth);
+  font-family: "semibold";
+  margin-bottom: 2%;
+}
+
+.new_shipment .tab-content .form-group input {
+  color: var(--color-fourth);
+  font-family: "regular";
+}
+
+.new_shipment .tab-content .form-group input::placeholder {
+  color: #999999;
+}
+
+.wizard, .tabcontrol {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wizard a, .tabcontrol a {
+  outline: 0;
+}
+
+.wizard ul, .tabcontrol ul {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.wizard ul>li, .tabcontrol ul>li {
+  display: block;
+  padding: 0;
+}
+
+/* Accessibility */
+
+.wizard>.steps .current-info, .tabcontrol>.steps .current-info {
+  position: absolute;
+  left: -999em;
+}
+
+.wizard>.content>.title, .tabcontrol>.content>.title {
+  position: absolute;
+  left: -999em;
+}
+
+.wizard>.steps {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.wizard.vertical>.steps {
+  display: inline;
+  float: right;
+  width: 20%;
+  background-color: transparent;
+  padding: 0;
+}
+
+.wizard>.steps .number {
+  font-size: 1.429em;
+}
+
+.wizard>.steps>ul>li {
+  width: 25%;
+}
+
+.wizard>.steps>ul>li, .wizard>.actions>ul>li {
+  float: right;
+}
+
+.wizard.vertical>.steps>ul>li {
+  float: none;
+  width: 100%;
+}
+
+.wizard>.steps a, .wizard>.steps a:hover, .wizard>.steps a:active {
+  display: block;
+  width: auto;
+  margin: 0 0.5em 0.5em;
+  padding: 1em 1em;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wizard>.steps .disabled a, .wizard>.steps .disabled a:hover, .wizard>.steps .disabled a:active {
+  background: #eee;
+  color: #aaa;
+  cursor: default;
+}
+
+.wizard>.steps .current a, .wizard>.steps .current a:hover, .wizard>.steps .current a:active {
+  color: var(--color-fourth);
+  font-family: "semibold";
+  cursor: default;
+}
+
+.wizard>.steps .done a, .wizard>.steps .done a:hover, .wizard>.steps .done a:active {
+  background: #9dc8e2;
+  color: #fff;
+}
+
+.wizard>.steps .error a, .wizard>.steps .error a:hover, .wizard>.steps .error a:active {
+  background: #ff3111;
+  color: #fff;
+}
+
+.wizard>.content {
+  background: #eee;
+  display: block;
+  margin: 0.5em;
+  min-height: 35em;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wizard.vertical>.content {
+  display: inline;
+  float: right;
+  margin: 0 2.5% 0.5em 2.5%;
+  width: 70%;
+}
+
+.wizard>.content>.body {
+  float: right;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  padding: 2.5%;
+}
+
+.wizard>.content>.body ul {
+  list-style: disc !important;
+}
+
+.wizard>.content>.body ul>li {
+  display: list-item;
+}
+
+.wizard>.content>.body>iframe {
+  border: 0 none;
+  width: 100%;
+  height: 100%;
+}
+
+.wizard>.content>.body input {
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.wizard>.content>.body input[type="checkbox"] {
+  display: inline-block;
+}
+
+.wizard>.content>.body input.error {
+  background: rgb(251, 227, 228);
+  border: 1px solid #fbc2c4;
+  color: #8a1f11;
+}
+
+.wizard>.content>.body label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.wizard>.content>.body label.error {
+  color: #8a1f11;
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+.wizard>.actions {
+  position: relative;
+  display: block;
+  text-align: text;
+  width: 100%;
+}
+
+.wizard.vertical>.actions {
+  display: inline;
+  float: left;
+  margin: 0 2.5%;
+  width: 95%;
+}
+
+.wizard>.actions>ul {
+  display: inline-block;
+  text-align: text;
+}
+
+.wizard>.actions>ul>li {
+  margin: 0 0.5em;
+}
+
+.wizard.vertical>.actions>ul>li {
+  margin: 0 0 0 1em;
+}
+
+.wizard>.actions a, .wizard>.actions a:hover, .wizard>.actions a:active {
+  background: #2184be;
+  color: #fff;
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wizard>.actions .disabled a, .wizard>.actions .disabled a:hover, .wizard>.actions .disabled a:active {
+  background: #eee;
+  color: #aaa;
+}
+
+.tabcontrol>.steps {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.tabcontrol>.steps>ul {
+  position: relative;
+  margin: 6px 0 0 0;
+  top: 1px;
+  z-index: 1;
+}
+
+.tabcontrol>.steps>ul>li {
+  float: right;
+  margin: 5px 2px 0 0;
+  padding: 1px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tabcontrol>.steps>ul>li:hover {
+  background: #edecec;
+  border: 1px solid #bbb;
+  padding: 0;
+}
+
+.tabcontrol>.steps>ul>li.current {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-bottom: 0 none;
+  padding: 0 0 1px 0;
+  margin-top: 0;
+}
+
+.tabcontrol>.steps>ul>li>a {
+  color: #5f5f5f;
+  display: inline-block;
+  border: 0 none;
+  margin: 0;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.tabcontrol>.steps>ul>li>a:hover {
+  text-decoration: none;
+}
+
+.tabcontrol>.steps>ul>li.current>a {
+  padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol>.content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 35em;
+  overflow: hidden;
+  border-top: 1px solid #bbb;
+  padding-top: 20px;
+}
+
+.tabcontrol>.content>.body {
+  float: right;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  padding: 2.5%;
+}
+
+.tabcontrol>.content>.body ul {
+  list-style: disc !important;
+}
+
+.tabcontrol>.content>.body ul>li {
+  display: list-item;
+}
+
+/* ======== new_shipment ======== */
 
 /* ======= privacy ======= */
 
