@@ -2379,12 +2379,12 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin-bottom: 1%;
 }
 
-.login .form-login .phone_number {
+.phone_number {
   display: flex;
   margin-bottom: 3%;
 }
 
-.login .form-login .phone_number input[type="text"] {
+.phone_number input[type="text"] {
   width: 75%;
   display: inline-block;
   height: 50px;
@@ -2403,23 +2403,24 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   height: 50px;
 }
 
-.login .form-login .phone_number .bootstrap-select {
+.phone_number .bootstrap-select {
   width: 20% !important;
-  height: 50px;
-  border: 1px solid #ced4da;
+  height: 50px !important;
+  border: 1px solid #ced4da !important;
   border-radius: 8px;
 }
 
-.login .form-login .phone_number .bootstrap-select button {
+.phone_number .bootstrap-select button {
   background-color: #fff;
   height: 100%;
+  border-radius: 25px;
 }
 
-.login .form-login .phone_number .bootstrap-select button .filter-option-inner {
+.phone_number .bootstrap-select button .filter-option-inner {
   height: 100%;
 }
 
-.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner, .login .form-login .dropdown-menu ul li .dropdown-item {
+.phone_number .bootstrap-select button .filter-option-inner-inner, .login .form-login .dropdown-menu ul li .dropdown-item {
   font-family: "semibold";
   text-align: center;
   color: #999999;
@@ -2429,11 +2430,11 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   justify-content: center;
 }
 
-.login .form-login .phone_number .bootstrap-select button .filter-option-inner-inner span {
+.phone_number .bootstrap-select button .filter-option-inner-inner span {
   margin: 0 5%;
 }
 
-.login .form-login .phone_number .dropdown-toggle::after {
+.phone_number .dropdown-toggle::after {
   content: none;
 }
 
@@ -3248,53 +3249,71 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 /* ======== new_shipment ======== */
 
-.new_shipment .nav-pills {
-  width: 16%;
-  margin: 0 2%;
-}
-
-.new_shipment .nav-pills .nav-link {
-  text-align: start;
-  color: var(--color-third);
-  font-family: "regular";
-  opacity: .7;
-  padding: 15% 0;
-}
-
-.new_shipment .nav-pills .nav-link.active, .new_shipment .nav-pills .show>.nav-link {
-  color: var(--color-fourth);
-  font-family: "semibold";
-  background-color: transparent;
-  opacity: 1;
-}
-
-.new_shipment .nav-pills .nav-link img {
-  width: 50px;
-  height: 50px;
-}
-
-.new_shipment .tab-content {
+.new_shipment .content {
   width: 80%;
-  padding: 3% 2%;
   border-right: 1px solid #CFCFCF;
 }
 
-.new_shipment .tab-content h3 {
-  color: var(--color-fourth);
-  font-family: "semibold";
+.new_shipment .bord {
+  border-right: none;
 }
 
-.new_shipment .tab-content .form-group {
+.new_shipment .content h3 {
+  color: var(--color-fourth);
+  font-family: "semibold";
+  margin-top: 5%;
+}
+
+.new_shipment .content .form-group {
   margin-bottom: 3%;
 }
 
-.new_shipment .tab-content .form-group label {
+.new_shipment .trucks .type-truck .form-group {
+  display: inline-block;
+  position: relative;
+}
+
+.new_shipment .trucks .type-truck .form-group input {
+  width: 170px;
+  height: 150px;
+  background-color: #F4F4F4;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.new_shipment .trucks .type-truck .form-group input:checked {
+  background-image: linear-gradient(#827DFF, #5B57BA);
+}
+
+.new_shipment .trucks .type-truck .form-group input:focus {
+  box-shadow: unset;
+}
+
+.new_shipment .trucks .type-truck .form-group input:checked ~ .truck-data label {
+  color: #fff;
+}
+
+.new_shipment .trucks .type-truck .truck-data {
+  position: absolute;
+  top: 25%;
+  right: 30%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.new_shipment .content .date-sec, .new_shipment .content .time-sec, .new_shipment .content .time-sec {
+  display: contents !important;
+}
+
+.new_shipment .content .form-group label {
   color: var(--color-fourth);
   font-family: "semibold";
   margin-bottom: 2%;
 }
 
-.new_shipment .tab-content .form-group input {
+.new_shipment .content .form-group input {
   color: var(--color-fourth);
   font-family: "regular";
 }
@@ -3351,7 +3370,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 .wizard>.steps .number {
-  font-size: 1.429em;
+  display: none;
 }
 
 .wizard>.steps>ul>li {
@@ -3365,12 +3384,13 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .wizard.vertical>.steps>ul>li {
   float: none;
   width: 100%;
+  font-family: 'regular';
 }
 
 .wizard>.steps a, .wizard>.steps a:hover, .wizard>.steps a:active {
   display: block;
   width: auto;
-  margin: 0 0.5em 0.5em;
+  margin: 2em .5em;
   padding: 1em 1em;
   text-decoration: none;
   -webkit-border-radius: 5px;
@@ -3379,9 +3399,10 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 .wizard>.steps .disabled a, .wizard>.steps .disabled a:hover, .wizard>.steps .disabled a:active {
-  background: #eee;
+  background: transparent;
   color: #aaa;
   cursor: default;
+  font-family: "regular";
 }
 
 .wizard>.steps .current a, .wizard>.steps .current a:hover, .wizard>.steps .current a:active {
@@ -3391,8 +3412,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 .wizard>.steps .done a, .wizard>.steps .done a:hover, .wizard>.steps .done a:active {
-  background: #9dc8e2;
-  color: #fff;
+  background: transparent;
+  color: var(--color-fourth);
 }
 
 .wizard>.steps .error a, .wizard>.steps .error a:hover, .wizard>.steps .error a:active {
@@ -3401,11 +3422,10 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 .wizard>.content {
-  background: #eee;
   display: block;
   margin: 0.5em;
-  min-height: 35em;
-  overflow: hidden;
+  min-height: 70em;
+  /* overflow: hidden; */
   position: relative;
   width: auto;
   -webkit-border-radius: 5px;
@@ -3416,16 +3436,18 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .wizard.vertical>.content {
   display: inline;
   float: right;
-  margin: 0 2.5% 0.5em 2.5%;
+  padding-top: 2%;
+  margin: 0 2.5% 0 2.5%;
   width: 70%;
+  border-radius: 0;
 }
 
 .wizard>.content>.body {
   float: right;
   position: absolute;
   width: 95%;
-  height: 95%;
-  padding: 2.5%;
+  height: 100%;
+  padding: 0 2.5% 2.5%;
 }
 
 .wizard>.content>.body ul {
@@ -3460,6 +3482,117 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .wizard>.content>.body label {
   display: inline-block;
   margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.wizard>.content>.body .card_day, .wizard>.content>.body .card_time {
+  position: relative;
+  display: inline-block;
+  margin: 2%;
+}
+
+.wizard>.content>.body .card_day:last-child input[type="text"]::placeholder {
+  color: var(--color-primary);
+  font-family: "semibold";
+  text-align: center;
+}
+
+.wizard>.content>.body .card_day:last-child input[type="date"] {
+  display: grid;
+  margin: 0 auto;
+}
+
+.wizard>.content>.body label .day {
+  color: #B0B0B0;
+  font-family: "regular";
+}
+
+.wizard>.content>.body label .day_number, .wizard>.content>.body label .month {
+  color: var(--color-fourth);
+  font-family: "semibold";
+}
+
+.wizard>.content>.body .card_day input {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(233, 233, 233, .61);
+  border: 1px solid rgba(220, 220, 220, .44);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.wizard>.content>.body .card_day input:focus {
+  box-shadow: unset;
+}
+
+.wizard>.content>.body .card_day input:checked {
+  background-image: linear-gradient(rgba(252, 189, 82, .61), #F1872B);
+}
+
+.wizard>.content>.body .card_day input:checked~label .month, .wizard>.content>.body .card_day input:checked~label .day_number {
+  color: #fff;
+}
+
+.wizard>.content>.body .card_day input:checked~label .day {
+  color: #FFFCF8;
+}
+
+.wizard>.content>.body .card_time input {
+  width: 170px;
+  height: 60px;
+  background-color: rgba(233, 233, 233, .61);
+  border: 1px solid rgba(220, 220, 220, .44);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.wizard>.content>.body .card_time input:focus {
+  box-shadow: unset;
+}
+
+.wizard>.content>.body .card_time input:checked {
+  background-image: linear-gradient(rgba(252, 189, 82, .61), #F1872B);
+}
+
+.wizard>.content>.body .card_time input:checked~label .date {
+  color: #fff;
+}
+
+.wizard>.content>.body .card_day label {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  pointer-events: none;
+  color: var(--color-primary);
+}
+
+.wizard>.content>.body .card_day label span {
+  display: block;
+}
+
+.wizard>.content>.body .card_time label {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  pointer-events: none;
+  color: #707070;
+}
+
+.wizard>.content>.body .card_time label span {
+  display: block;
+}
+
+.wizard>.content>.body .form-check {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.wizard>.content>.body .form-check .form-check-label {
+  color: #999999;
+}
+
+.wizard>.content>.body .form-check .form-check-input:checked {
+  background-color: var(--color-secound);
 }
 
 .wizard>.content>.body label.error {
@@ -3478,8 +3611,10 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .wizard.vertical>.actions {
   display: inline;
   float: left;
-  margin: 0 2.5%;
-  width: 95%;
+  padding: 2%;
+  margin: 0 2.5% 0 2.5%;
+  width: 75%;
+  border-right: 1px solid #CFCFCF;
 }
 
 .wizard>.actions>ul {
@@ -3496,7 +3631,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 .wizard>.actions a, .wizard>.actions a:hover, .wizard>.actions a:active {
-  background: #2184be;
+  background: var(--color-secound);
+  font-family: "semibold";
   color: #fff;
   display: block;
   padding: 0.5em 1em;
@@ -3507,8 +3643,8 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 }
 
 .wizard>.actions .disabled a, .wizard>.actions .disabled a:hover, .wizard>.actions .disabled a:active {
-  background: #eee;
-  color: #aaa;
+  background: #aaa;
+  color: #fff;
 }
 
 .tabcontrol>.steps {
@@ -3593,6 +3729,55 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   display: list-item;
 }
 
+.new_shipment .steps ul li a span {
+  margin: 0 5%;
+}
+.new_shipment .package_type .form-group{
+  display: inline-block;
+  position: relative;
+}
+.new_shipment .package_type .form-group input{
+  width: 130px;
+  height: 120px;
+  border-radius: 5px;
+}
+.new_shipment .package_type .form-group input:focus{
+  box-shadow: unset;
+}
+.new_shipment .package_type .form-group input:checked{
+  border: 1px solid var(--color-primary);
+}
+.new_shipment .package_type .form-group .truck-data{
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+.new_shipment h5{
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+.new_shipment .wieght, .new_shipment .counter{
+  font-family: "cursive";
+  width: 60%;
+  height: 50px;
+  display: inline-block !important;
+}
+.new_shipment .down_count, .new_shipment .up_count{
+  height: 50px;
+  width: 50px;
+  margin: 0 1%;
+  background-color: var(--color-primary);
+}
+.new_shipment .down_count svg, .new_shipment .up_count svg{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.new_shipment .form-group small{
+  font-family: "cursive";
+  margin-top: 2%;
+}
 /* ======== new_shipment ======== */
 
 /* ======= privacy ======= */

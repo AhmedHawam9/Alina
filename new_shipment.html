@@ -14,6 +14,8 @@
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -25,6 +27,7 @@
 
     <!-- ? Custom JavaScript -->
     <script src="js/jquery-step.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -99,110 +102,429 @@
     <!-- =========== ? NavBar =========== -->
 
     <!-- =========== ? new shipment =========== -->
-    <!-- <section class="new_shipment">
-        <div class="container">
-            <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-sender-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-sender" type="button" role="tab" aria-controls="v-pills-sender"
-                        aria-selected="true"><img src="media/image/icon/sender.png" alt="sender"> المرسل</button>
-                    <button class="nav-link" id="v-pills-recipient-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-recipient" type="button" role="tab" aria-controls="v-pills-recipient"
-                        aria-selected="false"><img src="media/image/icon/recipient.png" alt="recipient">
-                        المستلم</button>
-                    <button class="nav-link" id="v-pills-shipment-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-shipment" type="button" role="tab" aria-controls="v-pills-shipment"
-                        aria-selected="false"><img src="media/image/icon/shipment.png" alt="shipment"> الشحنة</button>
-                    <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment"
-                        aria-selected="false"><img src="media/image/icon/payments.png" alt="payments"> التكلفة
-                        والدفع</button>
-                </div>
-                <div class="tab-content" id="v-pills-tabContent">
-                    <form action="">
-                        <div class="tab-pane fade show active" id="v-pills-sender" role="tabpanel"
-                            aria-labelledby="v-pills-sender-tab">
-                            <div class="row">
-                                <div class="col-lg-6 col-sm-12">
-                                    <h3>معلومات المرسل</h3>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label for="">اسم المرسل</label>
-                                                <input type="text" class="form-control" placeholder="اسم المرسل">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label for="">رقم الجوال</label>
-                                                <input type="text" class="form-control" placeholder="رقم الجوال">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label for="">عنوان المرسل</label>
-                                                <input type="text" class="form-control" placeholder="عنوان المرسل">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label for="">المبني</label>
-                                                <input type="text" class="form-control" placeholder="المبني">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="form-group">
-                                                <label for="">الطابق</label>
-                                                <input type="text" class="form-control" placeholder="طابق رقم .3">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="form-group">
-                                                <label for="">الشقة</label>
-                                                <input type="text" class="form-control" placeholder="شقة رقم . 1">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-12"></div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-recipient" role="tabpanel"
-                            aria-labelledby="v-pills-recipient-tab">...</div>
-                        <div class="tab-pane fade" id="v-pills-shipment" role="tabpanel"
-                            aria-labelledby="v-pills-shipment-tab">...</div>
-                        <div class="tab-pane fade" id="v-pills-payment" role="tabpanel"
-                            aria-labelledby="v-pills-payment-tab">...</div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- =========== ? new shipment =========== -->
-
 
     <section class="new_shipment" id="example-vertical">
         <div class="tab-pills"><img src="media/image/icon/sender.png" alt="sender"><span>المرسل</span></div>
-        <div class="content">
-            <p>Proposal is a project idea that you bring together the Design Patterns as building blocks in oerder to
-                solve a real life problem. Lets build one together!
-            </p>
+        <div class="content bord sender">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h3>معلومات المرسل</h3>
+                    <div class="row">
+                        <!-- name of sender -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">اسم المرسل</label>
+                                <input type="text" class="form-control" placeholder="اسم المرسل">
+                            </div>
+                        </div>
+                        <!-- name of sender -->
+
+                        <!-- phone number -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">رقم الجوال </label>
+                                <div class="phone_number">
+                                    <input type="text" class="form-control" placeholder="رقم الجوال">
+                                    <select class="selectpicker form-control">
+                                        <option value="0"
+                                            data-content="+966 <span class='flag-icon flag-icon-sa'></span>"></option>
+                                        <option value="1"
+                                            data-content="+20 <span class='flag-icon flag-icon-eg'></span>"></option>
+                                        <option value="2"
+                                            data-content="+90 <span class='flag-icon flag-icon-tr'></span>"></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- phone number -->
+
+                        <!-- address sender -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">عنوان المرسل</label>
+                                <input type="text" class="form-control" placeholder="عنوان المرسل">
+                            </div>
+                        </div>
+                        <!-- address sender -->
+
+                        <!-- Build -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">المبني</label>
+                                <input type="text" class="form-control" placeholder="المبني">
+                            </div>
+                        </div>
+                        <!-- Build -->
+
+                        <!-- floor -->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">الطابق</label>
+                                <input type="text" class="form-control" placeholder="طابق رقم .3">
+                            </div>
+                        </div>
+                        <!-- floor -->
+
+                        <!-- Flat -->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">الشقة</label>
+                                <input type="text" class="form-control" placeholder="شقة رقم . 1">
+                            </div>
+                        </div>
+                        <!-- Flat -->
+
+                        <!-- type of address -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">نوع العنوان</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        المنزل
+                                        <input type="radio" class="form-check-input" name="address"
+                                            value="checkedValue">
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        العمل
+                                        <input type="radio" class="form-check-input" name="address"
+                                            value="checkedValue">
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        أخري
+                                        <input type="radio" class="form-check-input" name="address"
+                                            value="checkedValue">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- type of address -->
+                        <hr>
+
+                        <!-- date -->
+                        <div class="form-group date-sec">
+                            <label for="">التاريخ و الوقت</label>
+                            <!-- card date -->
+                            <div class="form-group card_day">
+                                <input type="radio" name="date" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="day">السبت</span>
+                                    <span class="day_number">21</span>
+                                    <span class="month">مايو</span>
+                                </label>
+                            </div>
+                            <!-- card date -->
+
+                            <!-- card date -->
+                            <div class="form-group card_day">
+                                <input type="radio" name="date" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="day">الأحد</span>
+                                    <span class="day_number">22</span>
+                                    <span class="month">مايو</span>
+                                </label>
+                            </div>
+                            <!-- card date -->
+
+                            <!-- card date -->
+                            <div class="form-group card_day">
+                                <input type="radio" name="date" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="day">الأتنين</span>
+                                    <span class="day_number">23</span>
+                                    <span class="month">مايو</span>
+                                </label>
+                            </div>
+                            <!-- card date -->
+
+                            <!-- card date -->
+                            <div class="form-group card_day">
+                                <input type="radio" name="date" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="day">الثلاثاء</span>
+                                    <span class="day_number">24</span>
+                                    <span class="month">مايو</span>
+                                </label>
+                            </div>
+                            <!-- card date -->
+
+                            <!-- card date -->
+                            <div class="form-group card_day">
+                                <input type="radio" name="date" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="day">الأربعاء</span>
+                                    <span class="day_number">25</span>
+                                    <span class="month">مايو</span>
+                                </label>
+                            </div>
+                            <!-- card date -->
+
+                            <!-- card date -->
+                            <div class="form-group card_day">
+                                <input type="radio" name="date" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="day">الخميس</span>
+                                    <span class="day_number">26</span>
+                                    <span class="month">مايو</span>
+                                </label>
+                            </div>
+                            <!-- card date -->
+
+                            <!-- card date -->
+                            <div class="form-group card_day">
+                                <input type="radio" name="date" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="day">الجمعة</span>
+                                    <span class="day_number">27</span>
+                                    <span class="month">مايو</span>
+                                </label>
+                            </div>
+                            <!-- card date -->
+
+                            <!-- select date -->
+                            <div class="form-group card_day">
+                                <input type="text" name="date" class="form-control" id="datepicker"
+                                    placeholder="تاريخ أخر" onfocus="(this.type='date')">
+                            </div>
+                            <!-- select date -->
+                        </div>
+                        <!-- date -->
+
+                        <!-- time -->
+                        <div class="form-group time-sec">
+                            <label for="">اختار الوقت المناسب </label>
+                            <!-- card time -->
+                            <div class="form-group card_time">
+                                <input type="radio" name="time" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="date">08:00 am - 12:00 pm</span>
+                                </label>
+                            </div>
+                            <!-- card time -->
+
+                            <!-- card time -->
+                            <div class="form-group card_time">
+                                <input type="radio" name="time" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="date">08:00 am - 12:00 pm</span>
+                                </label>
+                            </div>
+                            <!-- card time -->
+
+                            <!-- card time -->
+                            <div class="form-group card_time">
+                                <input type="radio" name="time" class="form-control" placeholder="">
+                                <label for="date">
+                                    <span class="date">08:00 am - 12:00 pm</span>
+                                </label>
+                            </div>
+                            <!-- card time -->
+                        </div>
+                        <!-- time -->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    map
+                </div>
+            </div>
         </div>
         <div class="tab-pills"><img src="media/image/icon/recipient.png" alt="recipient"><span>المستلم</span></div>
-        <div class="content">
-            <p>If your design includes any sensor please select a design patterns that best suits. If you can not find
-                the design pattern that you want to use send it to us. We can add it to our librarry.
-                <br>
-            </p>
+        <div class="content bord reciver">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h3>معلومات المستلم</h3>
+                    <div class="row">
+                        <!-- name of sender -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">اسم المرسل</label>
+                                <input type="text" class="form-control" placeholder="اسم المرسل">
+                            </div>
+                        </div>
+                        <!-- name of sender -->
+
+                        <!-- phone number -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">رقم الجوال </label>
+                                <div class="phone_number">
+                                    <input type="text" class="form-control" placeholder="رقم الجوال">
+                                    <select class="selectpicker form-control">
+                                        <option value="0"
+                                            data-content="+966 <span class='flag-icon flag-icon-sa'></span>"></option>
+                                        <option value="1"
+                                            data-content="+20 <span class='flag-icon flag-icon-eg'></span>"></option>
+                                        <option value="2"
+                                            data-content="+90 <span class='flag-icon flag-icon-tr'></span>"></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- phone number -->
+
+                        <!-- address sender -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">عنوان المرسل</label>
+                                <input type="text" class="form-control" placeholder="عنوان المرسل">
+                            </div>
+                        </div>
+                        <!-- address sender -->
+
+                        <!-- Build -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">المبني</label>
+                                <input type="text" class="form-control" placeholder="المبني">
+                            </div>
+                        </div>
+                        <!-- Build -->
+
+                        <!-- floor -->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">الطابق</label>
+                                <input type="text" class="form-control" placeholder="طابق رقم .3">
+                            </div>
+                        </div>
+                        <!-- floor -->
+
+                        <!-- Flat -->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="">الشقة</label>
+                                <input type="text" class="form-control" placeholder="شقة رقم . 1">
+                            </div>
+                        </div>
+                        <!-- Flat -->
+
+                        <!-- type of address -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="">نوع العنوان</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        سكنى
+                                        <input type="radio" class="form-check-input" name="address"
+                                            value="checkedValue">
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        تجاري
+                                        <input type="radio" class="form-check-input" name="address"
+                                            value="checkedValue">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- type of address -->
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tab-pills"><img src="media/image/icon/shipment.png" alt="shipment"><span>الشحنة</span></div>
-        <div class="content">
-            <p>The next and previous buttons help you to navigate through your content.</p>
+        <div class="content bord trucks">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h3>معلومات الشحنة</h3>
+                    <!-- type truck -->
+                    <div class="type-truck">
+                        <h5> نوع الشحنة ؟</h5>
+                        <div class="form-group">
+                            <div class="truck-data">
+                                <img src="media/image/icon/shipment.png" alt="shipment">
+                                <label for="">طرود</label>
+                            </div>
+                            <input type="radio" name="truck" id="" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <div class="truck-data">
+                                <img src="media/image/icon/documents.png" alt="documents">
+                                <label for="">وثائق</label>
+                            </div>
+                            <input type="radio" name="truck" id="" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <!-- type truck -->
+
+                    <!-- package_type -->
+                    <div class="package_type">
+                        <h5>نوع الطرد </h5>
+                        <div class="form-group">
+                            <div class="truck-data">
+                                <img src="media/image/icon/broken.png" alt="broken">
+                                <label for="">قابل للكسر</label>
+                            </div>
+                            <input type="radio" name="truck" id="" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <div class="truck-data">
+                                <img src="media/image/icon/liqued.png" alt="liqued">
+                                <label for="">سائل</label>
+                            </div>
+                            <input type="radio" name="truck" id="" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <div class="truck-data">
+                                <img src="media/image/icon/snow.png" alt="snow">
+                                <label for="">مثلج</label>
+                            </div>
+                            <input type="radio" name="truck" id="" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <div class="truck-data">
+                                <img src="media/image/icon/other.png" alt="other">
+                                <label for="">أخري</label>
+                            </div>
+                            <input type="radio" name="truck" id="" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <!-- package_type -->
+
+                    <!-- package_type -->
+                    <div class="form-group">
+                        <label for="">الوزن التقريبي</label>
+                        <input type="text" name="" id="" class="form-control wieght" placeholder="الوزن بالكيلو جرام">
+                        <small id="helpId" class="text-muted"><i class="fas fa-info-circle"></i> اقصي وزن للشحن لا
+                            يتجاوز 30Kg</small>
+                    </div>
+                    <!-- package_type -->
+
+                    <div class="form-group">
+                        <label for="">العدد</label>
+                        <input type="text" class="form-control counter" placeholder="العدد">
+                        <button class='up_count btn' title='Up'><i class="fas fa-plus"></i></button>
+                        <button class='down_count btn' title='Down'><i class="fas fa-minus"></i></button>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $('button').click(function (e) {
+                                var button_classes, value = +$('.counter').val();
+                                button_classes = $(e.currentTarget).prop('class');
+                                if (button_classes.indexOf('up_count') !== -1) {
+                                    value = (value) + 1;
+                                } else {
+                                    value = (value) - 1;
+                                }
+                                value = value < 0 ? 0 : value;
+                                $('.counter').val(value);
+                            });
+                            $('.counter').click(function () {
+                                $(this).focus().select();
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
         </div>
         <div class="tab-pills"><img src="media/image/icon/payments.png" alt="payments"><span>التكلفة
-            والدفع</span></div>
-        <div class="content">
-            <p>The next and previous buttons help you to navigate through your content.</p>
+                والدفع</span></div>
+        <div class="content bord pay">
+
         </div>
     </section>
     <script>
@@ -210,10 +532,17 @@
             headerTag: ".tab-pills",
             bodyTag: ".content",
             transitionEffect: "slideLeft",
-            stepsOrientation: "vertical"
+            stepsOrientation: "vertical",
+            labels: {
+                finish: "انهاء",
+                next: "حفظ و متابعة",
+                previous: "رجوع",
+            }
         });
 
     </script>
+    <!-- =========== ? new shipment =========== -->
+
 
     <!-- ? ======= footer =========== -->
     <footer>
