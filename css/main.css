@@ -1277,10 +1277,6 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 /* ======= shipment_details ======= */
 
-.shipment_details {
-  margin: 5% 0;
-}
-
 .shipment_details img {
   width: 85%;
   border-radius: 12px;
@@ -3289,7 +3285,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   box-shadow: unset;
 }
 
-.new_shipment .trucks .type-truck .form-group input:checked ~ .truck-data label {
+.new_shipment .trucks .type-truck .form-group input:checked~.truck-data label {
   color: #fff;
 }
 
@@ -3424,7 +3420,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .wizard>.content {
   display: block;
   margin: 0.5em;
-  min-height: 70em;
+  /* min-height: 80em; */
   /* overflow: hidden; */
   position: relative;
   width: auto;
@@ -3444,7 +3440,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 .wizard>.content>.body {
   float: right;
-  position: absolute;
+  /* position: absolute; */
   width: 95%;
   height: 100%;
   padding: 0 2.5% 2.5%;
@@ -3732,51 +3728,294 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .new_shipment .steps ul li a span {
   margin: 0 5%;
 }
-.new_shipment .package_type .form-group{
+
+.new_shipment .package_type .form-group {
   display: inline-block;
   position: relative;
 }
-.new_shipment .package_type .form-group input{
+
+.new_shipment .package_type .form-group input {
   width: 130px;
   height: 120px;
   border-radius: 5px;
 }
-.new_shipment .package_type .form-group input:focus{
+
+.new_shipment .package_type .form-group input:focus {
   box-shadow: unset;
 }
-.new_shipment .package_type .form-group input:checked{
+
+.new_shipment .package_type .form-group input:checked {
   border: 1px solid var(--color-primary);
 }
-.new_shipment .package_type .form-group .truck-data{
+
+.new_shipment .package_type .form-group .truck-data {
   position: absolute;
   top: 15%;
   width: 100%;
   text-align: center;
   pointer-events: none;
 }
-.new_shipment h5{
+
+.new_shipment h5 {
   font-family: "semibold";
   color: var(--color-fourth);
 }
-.new_shipment .wieght, .new_shipment .counter{
+
+.new_shipment .wieght {
+  font-family: "cursive";
+  width: 60%;
+  height: 50px;
+}
+
+.new_shipment .counter {
   font-family: "cursive";
   width: 60%;
   height: 50px;
   display: inline-block !important;
 }
-.new_shipment .down_count, .new_shipment .up_count{
+
+.new_shipment .down_count, .new_shipment .up_count {
   height: 50px;
   width: 50px;
   margin: 0 1%;
+}
+
+.new_shipment .up_count {
   background-color: var(--color-primary);
 }
-.new_shipment .down_count svg, .new_shipment .up_count svg{
+
+.new_shipment .down_count {
+  background-color: #DEDEDE;
+}
+
+.new_shipment .up_count svg {
   color: #fff;
+}
+
+.new_shipment .down_count svg {
+  color: #999999;
   font-size: 1.5rem;
 }
-.new_shipment .form-group small{
+
+.new_shipment .form-group small {
   font-family: "cursive";
   margin-top: 2%;
+}
+
+
+.new_shipment .trucks .type-delivery .form-group {
+  display: inline-block;
+  position: relative;
+}
+.new_shipment .trucks .type-delivery .form-group label, .new_shipment .trucks .type-delivery .form-group small{
+  color: #6B6B6B;
+}
+.new_shipment .trucks .type-delivery .form-group input {
+  width: 170px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.new_shipment .trucks .type-delivery .form-group input:checked {
+  background-image: linear-gradient(#827DFF, #5B57BA);
+}
+
+.new_shipment .trucks .type-delivery .form-group input:focus {
+  box-shadow: unset;
+}
+
+.new_shipment .trucks .type-delivery .form-group input:checked ~ .delivery-data label, .new_shipment .trucks .type-delivery .form-group input:checked ~ .delivery-data small {
+  color: #fff;
+}
+
+.new_shipment .trucks .type-delivery .delivery-data {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  left: 15%;
+  width: 70%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.new_shipment .arrival-date .form-group{
+  position: relative;
+}
+.new_shipment .arrival-date .form-group input{
+  height: 100px;
+  border-radius: 8px;
+}
+.new_shipment .arrival-date .form-group input:focus{
+  box-shadow: unset;
+}
+.new_shipment .arrival-date .form-group input:checked{
+  border: 1px solid var(--color-primary);
+}
+.new_shipment .arrival-date .form-group .arrival-date-data{
+  position: absolute;
+  top: 0;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.new_shipment .arrival-date .form-group input:checked ~ .arrival-date-data .arrival-date-text label, .new_shipment .arrival-date .form-group input:checked ~ .arrival-date-data .arrival-date-text span{
+  color: var(--color-primary);
+}
+.new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text label, .new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text span{
+  color: var(--color-third);
+  font-family: "semibold";
+}
+.new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text small{
+  color: #858585;
+  font-family: "regular";
+  display: block;
+}
+
+.new_shipment .arrival-date .form-group .arrival-date-data img{
+  width: 60px;
+  height: 60px;
+  margin: 0 5%;
+}
+.new_shipment .delivering_monetary_value input[type="checkbox"]{
+  display: inline-block;
+}
+.new_shipment .delivering_monetary_value input[type="number"]{
+  width: 60%;
+  display: none;
+}
+.new_shipment .delivering_monetary_value input[type="number"]::-webkit-outer-spin-button,
+.new_shipment .delivering_monetary_value input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.new_shipment .delivering_monetary_value input[type="checkbox"]:checked{
+  background-color: var(--color-primary);
+}
+.new_shipment .delivering_monetary_value label{
+  width: 80% !important;
+}
+.new_shipment textarea{
+  width: 60%;
+}
+.new_shipment .shipment_details .sender_data, .new_shipment .recipient_data{
+  background-color: #FCFCFC;
+}
+.new_shipment .shipment_details .sender_data{
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid #999999;
+  padding: 5%;
+}
+.new_shipment .shipment_details .recipient_data{
+  border-radius: 0 0 12px 12px;
+  padding: 5%;
+}
+.new_shipment .shipment_details .sender_data span, .new_shipment .recipient_data span{
+  color: #999999;
+  display: block;
+  font-family: "semibold";
+  margin-bottom: 1rem;
+}
+.new_shipment .shipment_details .sender_data p, .new_shipment .recipient_data p{
+  color: var(--color-fourth);
+  font-family: "semibold";
+}
+.new_shipment .shipment_details h4{
+  color: var(--color-fourth);
+  font-family: "semibold";
+  margin-bottom: 5%;
+}
+.new_shipment .payment_method ul li{
+  background-color: #DEDEDE;
+  list-style: none;
+  padding: 2% 0;
+  width: 80%;
+  margin: 0 auto 5%;
+  border-radius: 8px;
+}
+.new_shipment .payment_method ul li .form-group{
+  margin: 0;
+}
+.new_shipment .payment_method{
+  background-color: #FCFCFC;
+  padding: 5%;
+  border-radius: 8px;
+  margin-top: 5%;
+}
+
+.new_shipment .payment_method ul li img{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 0;
+}
+
+.new_shipment .payment_method ul li label{
+  display: inline-block !important;
+  width: 75% !important;
+}
+.new_shipment .payment_method ul li input{
+  display: inline-block !important;
+  vertical-align: middle;
+}
+.new_shipment .shipment_details .coupon{
+  margin: 5% 0;
+}
+.new_shipment .shipment_details .coupon input{
+  width: 80%;
+  display: inline-block;
+}
+.new_shipment .shipment_details .coupon .btn{
+  width: 19%;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: "semibold";
+}
+.new_shipment .shipment_details .shipment_det{
+  display: flex;
+  background-color: #FCFCFC;
+  border-radius: 12px;
+  padding: 5%;
+}
+.new_shipment .shipment_details .shipment_det .img-shipment{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.new_shipment .shipment_details .shipment_det .img-shipment img{
+  width: 50px;
+  height: 50px;
+}
+.new_shipment .shipment_details .shipment_det .list_shipment h6{
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+.new_shipment .shipment_details .shipment_det .list_shipment ul{
+  list-style: none !important;
+  font-family: "regular";
+  color: #999999;
+}
+.new_shipment .shipment_details .details_payment{
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  margin: 5% 0;
+  padding: 5%;
+}
+.new_shipment .shipment_details .details_payment ul li{
+  display: flex;
+  margin: 2% 0;
+}
+.new_shipment .shipment_details .details_payment ul li span{
+  width: 50%;
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+.new_shipment .shipment_details .details_payment ul li .amount{
+  text-align: end;
+  font-family: cursive;
 }
 /* ======== new_shipment ======== */
 
