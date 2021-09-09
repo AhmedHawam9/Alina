@@ -14,6 +14,9 @@
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -24,6 +27,8 @@
     <!-- ? Main JavaScript -->
 
     <!-- ? Custom JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -97,102 +102,127 @@
     </nav>
     <!-- =========== ? NavBar =========== -->
 
-    <!-- =========== ? Header map =========== -->
-    <section class="header_map">
-        <div class="container-fluid p-0">
-            <img src="media/image/map.PNG" alt="map">
-        </div>
-    </section>
-    <!-- =========== ? Header map =========== -->
-
-    <!-- =========== ? contact =========== -->
-    <section class="contact-section">
+    <!-- =========== ? result trucking =========== -->
+    <section class="result_trucking">
         <div class="container">
-            <div class="row">
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="text-contact">
-                            <p>25 , شارع الملك عبد
-                                العزيزالحى الخامس , جدة</p>
-                        </div>
-                    </div>
+            <h3>نتائج تتبع الشحنة الخاصة بك</h3>
+            <!-- shipment_data -->
+            <div class="shipment_data">
+                <div class="header_shipment">
+                    <p>رقم الشحنة</p>
+                    <div class="vl"></div>
+                    <p>25498</p>
                 </div>
-                <!-- ======== contact card ======== -->
-
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <div class="text-contact">
-                            <p>+2688325458451</p>
-                            <p>+2688325458451</p>
-                        </div>
-                    </div>
+                <div class="shipment_status">
+                    <ul>
+                        <li>
+                            <span>تاريخ الشحن</span>
+                            <p>22/10/2020</p>
+                        </li>
+                        <li>
+                            <span>حالة الشحنة</span>
+                            <p>جارى الشحن</p>
+                        </li>
+                        <li>
+                            <span>تاريخ الوصول</span>
+                            <p>30/0/2020</p>
+                        </li>
+                    </ul>
                 </div>
-                <!-- ======== contact card ======== -->
-
-                <!-- ======== contact card ======== -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-card">
-                        <i class="far fa-envelope"></i>
-                        <div class="text-contact">
-                            <p>someone@gmail.com</p>
-                            <p>someone@gmail.com</p>
-                        </div>
-                    </div>
+                <div class="shipment_steps">
+                    <ul>
+                        <li>
+                            <img src="media/image/icon/steps/step1.png" alt="step">
+                            <p>طلب الشحنة</p>
+                        </li>
+                        <li>
+                            <img src="media/image/icon/steps/step2.png" alt="step">
+                            <p>المندوب في الطريق</p>
+                        </li>
+                        <li>
+                            <img src="media/image/icon/steps/step3.png" alt="step">
+                            <p>تم الإستلام</p>
+                        </li>
+                        <li>
+                            <img src="media/image/icon/steps/step4.png" alt="step">
+                            <p>الشحنة في المتجر</p>
+                        </li>
+                        <li>
+                            <img src="media/image/icon/steps/step5.png" alt="step">
+                            <p>المندوب في طريقه
+                                إلى المستلم</p>
+                        </li>
+                        <li>
+                            <img src="media/image/icon/steps/step6.png" alt="step">
+                            <p>تم التسليم</p>
+                        </li>
+                    </ul>
                 </div>
-                <!-- ======== contact card ======== -->
             </div>
-        </div>
-    </section>
-    <!-- =========== ? contact =========== -->
+            <!-- shipment_data -->
 
-    <section class="contact-form">
-        <div class="container">
-            <h3>أو تواصل معنا من خلال إرسال رسالة نصية</h3>
-            <form action="#">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">الاسم كاملا</label>
-                            <input type="text" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">البريد الإلكتروني</label>
-                            <input type="emial" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">رقم الجوال</label>
-                            <input type="text" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group">
-                            <label for="">الموضوع</label>
-                            <input type="text" name="" id="" class="form-control">
-                        </div>
-                    </div>
-    
-                    <div class="col-md-12 col-sm-12">
-                        <div class="form-group">
-                            <label for="">رسالتك</label>
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="btn">ارسال</button>
-            </form>
+            <!-- personal data -->
+            <div class="personal_data">
+                <ul>
+                    <li class="personal_data_li">
+                        <h5 class="header_personal_data">بيانات الشاحن</h5>
+                        <ul>
+                            <li>أحمد عادل</li>
+                            <li>المطافى , المجزر , المنصوره,الدقهليه , مصر</li>
+                            <li>+2458322451</li>
+                            <li>someone@gmail.com</li>
+                        </ul>
+                    </li>
+                    <li class="personal_data_li">
+                        <h5 class="header_personal_data">بيانات المستلم</h5>
+                        <ul>
+                            <li>محمد ابراهيم</li>
+                            <li>المطافى , المجزر , المنصوره,الدقهليه , مصر</li>
+                            <li>+2458322451</li>
+                            <li>someone@gmail.com</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- personal data -->
+
+            <!-- shipment_data_trucking -->
+            <div class="shipment_data_trucking">
+                <h4>بيانات الشحنة</h4>
+                <ul>
+                    <li>
+                        <p>طرد</p>
+                        <span>قابل للكسر</span>
+                    </li>
+                    <li>
+                        <p>العدد</p>
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <p>الوزن</p>
+                        <span>5 Kg</span>
+                    </li>
+                    <li>
+                        <span>التوصيل عبر سيارة</span>
+                    </li>
+                    <li>
+                        <span>التوصيل اكسبرس : ( 12 - 24 ) ساعة</span>
+                    </li>
+                    <li>
+                        <span>لا يوجد تحويلات مالية</span>
+                    </li>
+                </ul>
+                <h4>ملاحظات على الشحنة</h4>
+                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+                    يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                    التطبيق.
+                </p>
+            </div>
+            <!-- shipment_data_trucking -->
+
         </div>
     </section>
+    <!-- =========== ? result trucking =========== -->
 
     <!-- ? ======= footer =========== -->
     <footer>
@@ -305,6 +335,7 @@
         </div>
     </footer>
     <!-- ? ======= footer =========== -->
+
     <script src="js/main.js"></script>
 
 </body>

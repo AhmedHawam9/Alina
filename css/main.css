@@ -3802,14 +3802,15 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin-top: 2%;
 }
 
-
 .new_shipment .trucks .type-delivery .form-group {
   display: inline-block;
   position: relative;
 }
-.new_shipment .trucks .type-delivery .form-group label, .new_shipment .trucks .type-delivery .form-group small{
+
+.new_shipment .trucks .type-delivery .form-group label, .new_shipment .trucks .type-delivery .form-group small {
   color: #6B6B6B;
 }
+
 .new_shipment .trucks .type-delivery .form-group input {
   width: 170px;
   height: 150px;
@@ -3826,7 +3827,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   box-shadow: unset;
 }
 
-.new_shipment .trucks .type-delivery .form-group input:checked ~ .delivery-data label, .new_shipment .trucks .type-delivery .form-group input:checked ~ .delivery-data small {
+.new_shipment .trucks .type-delivery .form-group input:checked~.delivery-data label, .new_shipment .trucks .type-delivery .form-group input:checked~.delivery-data small {
   color: #fff;
 }
 
@@ -3840,20 +3841,24 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   pointer-events: none;
 }
 
-.new_shipment .arrival-date .form-group{
+.new_shipment .arrival-date .form-group {
   position: relative;
 }
-.new_shipment .arrival-date .form-group input{
+
+.new_shipment .arrival-date .form-group input {
   height: 100px;
   border-radius: 8px;
 }
-.new_shipment .arrival-date .form-group input:focus{
+
+.new_shipment .arrival-date .form-group input:focus {
   box-shadow: unset;
 }
-.new_shipment .arrival-date .form-group input:checked{
+
+.new_shipment .arrival-date .form-group input:checked {
   border: 1px solid var(--color-primary);
 }
-.new_shipment .arrival-date .form-group .arrival-date-data{
+
+.new_shipment .arrival-date .form-group .arrival-date-data {
   position: absolute;
   top: 0;
   align-items: center;
@@ -3862,73 +3867,88 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   width: 100%;
   pointer-events: none;
 }
-.new_shipment .arrival-date .form-group input:checked ~ .arrival-date-data .arrival-date-text label, .new_shipment .arrival-date .form-group input:checked ~ .arrival-date-data .arrival-date-text span{
+
+.new_shipment .arrival-date .form-group input:checked~.arrival-date-data .arrival-date-text label, .new_shipment .arrival-date .form-group input:checked~.arrival-date-data .arrival-date-text span {
   color: var(--color-primary);
 }
-.new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text label, .new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text span{
+
+.new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text label, .new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text span {
   color: var(--color-third);
   font-family: "semibold";
 }
-.new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text small{
+
+.new_shipment .arrival-date .form-group .arrival-date-data .arrival-date-text small {
   color: #858585;
   font-family: "regular";
   display: block;
 }
 
-.new_shipment .arrival-date .form-group .arrival-date-data img{
+.new_shipment .arrival-date .form-group .arrival-date-data img {
   width: 60px;
   height: 60px;
   margin: 0 5%;
 }
-.new_shipment .delivering_monetary_value input[type="checkbox"]{
+
+.new_shipment .delivering_monetary_value input[type="checkbox"] {
   display: inline-block;
 }
-.new_shipment .delivering_monetary_value input[type="number"]{
+
+.new_shipment .delivering_monetary_value input[type="number"] {
   width: 60%;
   display: none;
 }
-.new_shipment .delivering_monetary_value input[type="number"]::-webkit-outer-spin-button,
-.new_shipment .delivering_monetary_value input[type="number"]::-webkit-inner-spin-button {
+
+.new_shipment .delivering_monetary_value input[type="number"]::-webkit-outer-spin-button, .new_shipment .delivering_monetary_value input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.new_shipment .delivering_monetary_value input[type="checkbox"]:checked{
+
+.new_shipment .delivering_monetary_value input[type="checkbox"]:checked {
   background-color: var(--color-primary);
 }
-.new_shipment .delivering_monetary_value label{
+
+.new_shipment .delivering_monetary_value label {
   width: 80% !important;
 }
-.new_shipment textarea{
+
+.new_shipment textarea {
   width: 60%;
 }
-.new_shipment .shipment_details .sender_data, .new_shipment .recipient_data{
+
+.new_shipment .shipment_details .sender_data, .new_shipment .recipient_data {
   background-color: #FCFCFC;
 }
-.new_shipment .shipment_details .sender_data{
+
+.new_shipment .shipment_details .sender_data {
   border-radius: 12px 12px 0 0;
   border-bottom: 1px solid #999999;
   padding: 5%;
 }
-.new_shipment .shipment_details .recipient_data{
+
+.new_shipment .shipment_details .recipient_data {
   border-radius: 0 0 12px 12px;
   padding: 5%;
 }
-.new_shipment .shipment_details .sender_data span, .new_shipment .recipient_data span{
+
+.new_shipment .shipment_details .sender_data span, .new_shipment .recipient_data span {
   color: #999999;
   display: block;
   font-family: "semibold";
   margin-bottom: 1rem;
 }
-.new_shipment .shipment_details .sender_data p, .new_shipment .recipient_data p{
+
+.new_shipment .shipment_details .sender_data p, .new_shipment .recipient_data p {
   color: var(--color-fourth);
   font-family: "semibold";
 }
-.new_shipment .shipment_details h4{
+
+.new_shipment .shipment_details h4 {
   color: var(--color-fourth);
   font-family: "semibold";
   margin-bottom: 5%;
 }
-.new_shipment .payment_method ul li{
+
+.new_shipment .payment_method ul li {
   background-color: #DEDEDE;
   list-style: none;
   padding: 2% 0;
@@ -3936,88 +3956,415 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin: 0 auto 5%;
   border-radius: 8px;
 }
-.new_shipment .payment_method ul li .form-group{
+
+.new_shipment .payment_method ul li .form-group {
   margin: 0;
 }
-.new_shipment .payment_method{
+
+.new_shipment .payment_method {
   background-color: #FCFCFC;
   padding: 5%;
   border-radius: 8px;
   margin-top: 5%;
 }
 
-.new_shipment .payment_method ul li img{
+.new_shipment .payment_method ul li img {
   width: 50px;
   height: 50px;
   display: inline-block;
   border-radius: 0;
 }
 
-.new_shipment .payment_method ul li label{
+.new_shipment .payment_method ul li label {
   display: inline-block !important;
   width: 75% !important;
 }
-.new_shipment .payment_method ul li input{
+
+.new_shipment .payment_method ul li input {
   display: inline-block !important;
   vertical-align: middle;
 }
-.new_shipment .shipment_details .coupon{
+
+.new_shipment .shipment_details .coupon {
   margin: 5% 0;
 }
-.new_shipment .shipment_details .coupon input{
+
+.new_shipment .shipment_details .coupon input {
   width: 80%;
   display: inline-block;
 }
-.new_shipment .shipment_details .coupon .btn{
+
+.new_shipment .shipment_details .coupon .btn {
   width: 19%;
   background-color: var(--color-primary);
   color: #fff;
   font-family: "semibold";
 }
-.new_shipment .shipment_details .shipment_det{
+
+.new_shipment .shipment_details .shipment_det {
   display: flex;
   background-color: #FCFCFC;
   border-radius: 12px;
   padding: 5%;
 }
-.new_shipment .shipment_details .shipment_det .img-shipment{
+
+.new_shipment .shipment_details .shipment_det .img-shipment {
   width: 20%;
   display: flex;
   align-items: center;
 }
-.new_shipment .shipment_details .shipment_det .img-shipment img{
+
+.new_shipment .shipment_details .shipment_det .img-shipment img {
   width: 50px;
   height: 50px;
 }
-.new_shipment .shipment_details .shipment_det .list_shipment h6{
+
+.new_shipment .shipment_details .shipment_det .list_shipment h6 {
   font-family: "semibold";
   color: var(--color-fourth);
 }
-.new_shipment .shipment_details .shipment_det .list_shipment ul{
+
+.new_shipment .shipment_details .shipment_det .list_shipment ul {
   list-style: none !important;
   font-family: "regular";
   color: #999999;
 }
-.new_shipment .shipment_details .details_payment{
+
+.new_shipment .shipment_details .details_payment {
   background-color: #FCFCFC;
   border-radius: 10px;
   margin: 5% 0;
   padding: 5%;
 }
-.new_shipment .shipment_details .details_payment ul li{
+
+.new_shipment .shipment_details .details_payment ul li {
   display: flex;
   margin: 2% 0;
 }
-.new_shipment .shipment_details .details_payment ul li span{
+
+.new_shipment .shipment_details .details_payment ul li span {
   width: 50%;
   font-family: "semibold";
   color: var(--color-fourth);
 }
-.new_shipment .shipment_details .details_payment ul li .amount{
+
+.new_shipment .shipment_details .details_payment ul li .amount {
   text-align: end;
   font-family: cursive;
 }
+
+.new_shipment .payment_data h4 {
+  font-family: "semibold";
+  color: var(--color-fourth);
+  margin-bottom: 5%;
+}
+
+.new_shipment .payment_data .payment_data_card {
+  display: flex;
+}
+
+.new_shipment .payment_data .payment_data_card .form-group {
+  width: 25%;
+  position: relative;
+  margin-left: 5%;
+}
+
+.new_shipment .payment_data .payment_data_card .form-group input {
+  width: 100%;
+  height: 130px;
+  background-color: #FAFAFA;
+  border-radius: 24px;
+}
+
+.new_shipment .payment_data .payment_data_card .form-group input:focus {
+  box-shadow: unset;
+}
+
+.new_shipment .payment_data .payment_data_card .form-group input:checked {
+  border: 2px solid var(--color-secound);
+}
+
+.new_shipment .payment_data .payment_data_card .form-group img {
+  position: absolute;
+  top: 35%;
+  width: 50%;
+  left: 25%;
+  right: 25%;
+  pointer-events: none;
+}
+
+.new_shipment .payment_data .form-check label {
+  font-family: "semibold";
+  color: var(--color-fourth) !important;
+}
+
+.new_shipment .payment_data .form-check input {
+  float: right;
+  margin-left: 1%;
+}
+
 /* ======== new_shipment ======== */
+
+/* ======== success ======== */
+.success{
+  padding: 5% 0;
+  background-color: #F7F7F7;
+}
+.success .success_details{
+  background-color: #fff;
+  padding: 5% 0;
+  text-align: center;
+}
+.success .success_details img{
+  width: 15%;
+}
+.success .success_details h4{
+  text-align: center;
+  color: var(--color-fourth);
+  font-family: "semibold";
+  margin: 2% 0;
+}
+.success .success_details p{
+  color: var(--color-fourth);
+  font-family: "regular";
+  width: 25%;
+  margin: 0 auto;
+}
+.success .success_details .btn{
+  color: var(--color-fourth);
+  font-family: "semibold";
+  background-color: var(--color-secound);
+  color: #fff;
+  width: 15%;
+  margin-top: 2%;
+}
+
+/* ======== success ======== */
+
+/* ======== trucking ======== */
+.trucking{
+  margin: 5% 0;
+}
+.trucking .block{
+  background-color: #FAFAFA;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  margin: 3% 0;
+}
+.trucking .block img{
+  width: 60px;
+  height: 60px;
+  margin-left: 2%;
+}
+.trucking .block p{
+  color: #707070;
+  font-family: "regular";
+  display: inline-block;
+  margin: 0;
+  width: 45%;
+}
+.trucking .form-group{
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+.trucking .form-group label{
+  font-family: "semibold";
+  color: var(--color-fourth);
+  text-align: center;
+  margin-bottom: 1%;
+  display: block;
+}
+.trucking .form-group input{
+  background-color: #F2F2F2;
+  color: #999999;
+  font-family: "regular";
+  height: 50px;
+}
+.trucking .form-group button[type="submit"]{
+  background-color: var(--color-secound);
+  color: #fff;
+  font-family: "semibold";
+  position: absolute;
+  left: 2%;
+  top: 47%;
+  border-radius: 8px;
+}
+/* ======== trucking ======== */
+
+/* ======== error ======== */
+.error{
+  text-align: center;
+  margin: 5% 0;
+}
+.error h1{
+  font-family: sans-serif;
+  color: var(--color-fourth);
+  margin: 2% 0;
+}
+.error img{
+  width: 25%;
+}
+.error .btn{
+  background-color: var(--color-secound);
+  color: #fff;
+  font-family: "semibold";
+  width: 15%;
+  border-radius: 100px;
+}
+
+/* ======== error ======== */
+
+/* ======== result_trucking ======== */
+.result_trucking{
+  margin: 5% 0;
+}
+.result_trucking h3{
+  font-family: "regular";
+  color: var(--color-fourth);
+  text-align: center;
+}
+.result_trucking .shipment_data{
+  border: 1px solid #C4C4C4;
+  border-radius: 8px 8px 0 0;
+}
+.result_trucking .shipment_data .header_shipment{
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0;
+  border-radius: 8px 8px 0 0;
+}
+.result_trucking .shipment_data .header_shipment .vl{
+  border-left: 2px solid #8B70DF;
+  height: 30px;
+  margin: 0 2%;
+}
+.result_trucking .shipment_data .header_shipment p{
+  display: inline-block;
+  margin: 0;
+  font-family: "regular";
+}
+.result_trucking .shipment_data .shipment_status{
+  background-color: #F2EDFF;
+}
+.result_trucking .shipment_data .shipment_status ul{
+  display: flex;
+  list-style: none;
+  padding: 1% 0;
+}
+.result_trucking .shipment_data .shipment_status ul li{
+  width: 33.3%;
+  text-align: center;
+}
+.result_trucking .shipment_data .shipment_status ul li span{
+  font-family: "regular";
+  color: var(--color-fourth);
+}
+.result_trucking .shipment_data .shipment_status ul li p{
+  display: inline-block;
+  color: var(--color-fourth);
+  font-family: "semibold";
+  margin: 0;
+}
+.result_trucking .shipment_steps ul{
+  display: flex;
+  list-style: none;
+}
+.result_trucking .shipment_steps ul li{
+  width: 16.66%;
+  text-align: center;
+}
+.result_trucking .shipment_steps ul li img{
+  width: 70px;
+  height: 70px;
+}
+.result_trucking .shipment_steps ul li p{
+  font-family: "semibold";
+  color: var(--color-fourth);
+  width: 60%;
+  margin: 5% auto 0;
+}
+.result_trucking .personal_data{
+  margin: 5% 0;
+  border: 1px solid #C4C4C4;
+  border-radius: 8px 8px 0 0;
+}
+.result_trucking .personal_data ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.result_trucking .personal_data ul li{
+  width: 50%;
+  text-align: center;
+}
+.result_trucking .personal_data ul li .header_personal_data{
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: "semibold";
+  padding: 2% 0;
+  border-left: 1px solid #979797;
+  margin: 0;
+}
+.result_trucking .personal_data ul li:first-child .header_personal_data{
+  border-radius: 0 8px 0 0;
+}
+.result_trucking .personal_data ul li:last-child .header_personal_data{
+  border-radius: 8px 0 0 0;
+}
+.result_trucking .personal_data ul li ul{
+  display: block;
+  padding-top: 3%;
+}
+.result_trucking .personal_data ul li:first-child ul{
+  border-left: 1px solid #979797;
+}
+.result_trucking .personal_data ul li ul li{
+  text-align: center;
+  width: 100%;
+  padding: 0 0 3%;
+  color: var(--color-fourth);
+}
+.result_trucking .personal_data ul li ul li{
+  font-family: "semibold";
+}
+.result_trucking .shipment_data_trucking{
+  background-color: #F7F7F7;
+  border-radius: 8px;
+  padding: 5%;
+}
+.result_trucking .shipment_data_trucking h4{
+  color: var(--color-fourth);
+  font-family: "semibold";
+  margin-bottom: 2%;
+}
+.result_trucking .shipment_data_trucking p{
+  font-family: "regular";
+  color: var(--color-fourth);
+}
+.result_trucking .shipment_data_trucking ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.result_trucking .shipment_data_trucking ul li{
+  width: 16.66%;
+}
+.result_trucking .shipment_data_trucking ul li p{
+  display: inline-block;
+  font-family: "semibold";
+  color: var(--color-fourth);
+}
+.result_trucking .shipment_data_trucking ul li span{
+  font-family: "regular";
+  color: var(--color-fourth);
+}
+/* ======== result_trucking ======== */
 
 /* ======= privacy ======= */
 
@@ -4676,6 +5023,49 @@ footer .footer-bottom .my-heart {
     padding: 5px 1%;
     width: 45%;
   }
+  .wizard.vertical>.steps {
+    width: 100%;
+    float: unset;
+  }
+  .wizard.vertical>.steps>ul {
+    display: flex;
+  }
+  .wizard.vertical>.steps>ul>li {
+    width: 20%;
+  }
+  .wizard.vertical>.steps>ul>li img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .wizard.vertical>.content {
+    width: 100%;
+  }
+  .wizard.vertical>.actions {
+    float: right;
+    display: block;
+  }
+  .new_shipment .steps ul li a span {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .wizard>.content>.body .shipment_details, .wizard>.content>.body.shipment_details {
+    margin-top: 5%;
+  }
+  .new_shipment .payment_data .payment_data_card .form-group input {
+    height: 120px;
+  }
+  .new_shipment .payment_data .payment_data_card .form-group {
+    width: 33%;
+  }
+  .success .success_details p{
+    width: 60%;
+  }
+  .success .success_details .btn{
+    width: 20%;
+  }
   footer .col-links {
     justify-content: center;
     align-items: center;
@@ -4835,5 +5225,52 @@ footer .footer-bottom .my-heart {
   }
   .toggle-box+label:before {
     top: 25%;
+  }
+  .new_shipment .payment_data .payment_data_card .form-group input{
+    height: 70px;
+  }
+  .success .success_details p{
+    width: 80%;
+  }
+  .success .success_details .btn{
+    width: 25%;
+  }
+  .success .success_details img{
+    width: 20%;
+  }
+  .trucking .block p{
+    width: 100%;
+  }
+  .trucking .form-group{
+    width: 100%;
+  }
+  .trucking .form-group button[type="submit"]{
+    top: 45%;
+  }
+  .result_trucking .shipment_steps ul, .result_trucking .shipment_data .shipment_status ul, .result_trucking .personal_data ul, .result_trucking .shipment_data_trucking ul{
+    display: block;
+  }
+  .result_trucking .shipment_data_trucking ul li{
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 2%;
+  }
+  .result_trucking .shipment_steps ul li, .result_trucking .shipment_data .shipment_status ul li{
+    width: 100%;
+    margin: 5% 0;
+  }
+  .result_trucking .personal_data ul li:first-child ul{
+    border: unset;
+  }
+  .result_trucking .personal_data{
+    border: unset;
+  }
+  .result_trucking .personal_data ul .personal_data_li{
+    width: 100%;
+    margin: 5% 0;
+    border: 1px solid #C4C4C4;
+  }
+  .result_trucking .personal_data ul li:first-child .header_personal_data, .result_trucking .personal_data ul li .header_personal_data{
+    border-radius: 8px 8px 0 0 !important;
   }
 }
