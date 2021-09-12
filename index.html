@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="css/hover-min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/aos.min.css" />
     <!-- ? Custom CSS -->
-    <!-- ? Bootstrap CSS -->
 
     <!-- ? Main JavaScript -->
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -30,6 +30,7 @@
     <!-- ? Custom JavaScript -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/aos.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -240,7 +241,7 @@
             <div class="row">
                 <!-- ======== Card ======== -->
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <img src="media/image/ship1.jpg" class="card-img-top" alt="ship">
                         <div class="card-body">
                             <h5 class="card-title">شحن الشركات</h5>
@@ -254,7 +255,7 @@
                 <!-- ======== Card ======== -->
                 <!-- ======== Card ======== -->
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <img src="media/image/ship2.jpg" class="card-img-top" alt="ship">
                         <div class="card-body">
                             <h5 class="card-title">شحن المطاعم والمتاجر الإلكترونية</h5>
@@ -268,7 +269,7 @@
                 <!-- ======== Card ======== -->
                 <!-- ======== Card ======== -->
                 <div class="col-lg-4 col-sm-12">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <img src="media/image/ship3.jpg" class="card-img-top" alt="ship">
                         <div class="card-body">
                             <h5 class="card-title">شحن الافراد</h5>
@@ -289,7 +290,8 @@
     <section class="services">
         <div class="container-fluid">
             <div class="row">
-                <div class="offset-lg-2 mx-auto col-lg-4 col-sm-12">
+                <div class="offset-lg-2 mx-auto col-lg-4 col-sm-12" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="1000">
                     <h2>الخدمات التي نقدمها</h2>
                     <p>استمتع براحة منزلك لأن استخدام خدمات توصيل البريد السريع لم يكن أسهل من أي وقت. إذا كنت ترغب في
                         إرسال الهدايا إلى أصدقائك وعائلتك، والطرود، أو الوثائق مع حماية عالية من السلامة، آمنة وصول
@@ -298,7 +300,8 @@
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <!-- Swiper -->
-                    <div class="swiper-container services_Swiper">
+                    <div class="swiper-container services_Swiper" data-aos="fade-left" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration="1000">
                         <div class="swiper-wrapper">
                             <!-- ========= Slide ========= -->
                             <div class="swiper-slide">
@@ -376,7 +379,8 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
                     <h3 class="how-to-work">كيف تعمل؟</h3>
-                    <ol class="list-group vertical-steps">
+                    <ol class="list-group vertical-steps" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1000">
                         <li class="list-group-item">
                             <div class="work-text">
                                 <h4>أدخل تفاصيل منتجك المراد شحنه</h4>
@@ -402,7 +406,7 @@
                     </ol>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <form action="">
+                    <form action="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <h2>يمكنك حساب شحنتك الآن</h2>
                         <div class="row">
                             <!-- ======= Name ======= -->
@@ -720,7 +724,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-lg-flex col-lg-8 col-md-12 col-sm-12 mx-auto" > 
+                <div class="d-lg-flex col-lg-8 col-md-12 col-sm-12 mx-auto">
                     <div class="col-lg-4 col-md-12 col-sm-12 col-links">
                         <div class="h3 d-block">روابط سريعة</div>
                         <div class="d-lg-block">
@@ -743,7 +747,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-12 col-sm-12 p-0 col-links">
                         <div class="h3 d-block">خليك على اتصال</div>
                         <div class="d-block">
@@ -804,10 +808,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init({disable: 'mobile'});
+    </script>
     <!-- ? ======= footer =========== -->
 
     <script src="js/main.js"></script>
-    
+
 </body>
 
 </html>
