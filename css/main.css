@@ -552,6 +552,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .shipment .card .card-body .card-title {
   color: var(--color-fourth);
   font-family: "semibold";
+  height: 50px;
 }
 
 .shipment .card .card-body .card-text {
@@ -564,7 +565,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   color: #fff;
   font-family: "semibold";
   border-radius: 8px;
-  width: 30%;
+  width: fit-content;
 }
 
 /* ========== shipment =========== */
