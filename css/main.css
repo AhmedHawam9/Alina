@@ -558,6 +558,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .shipment .card .card-body .card-text {
   color: #4E4E4E;
   font-family: "regular";
+  height: 100px;
 }
 
 .shipment .card .card-body .btn {
