@@ -25,3 +25,17 @@ for (let i = 0; i < menuLength; i++) {
   }
 }
 //=========== Active navbar Link in multi pages =============
+
+
+
+document.getElementById("new-shipment-btn").onclick = function () {
+  swal(
+    {
+      title: "قريبا",
+      text: "هذه الخدمة غير متوفرة الان",
+      type: "warning",
+      confirmButtonColor: "#AEDEF4",
+      closeOnConfirm: false,
+    },
+  );
+};
