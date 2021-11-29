@@ -828,7 +828,9 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 /* ========== Work =========== */
 
 /* ========== blog =========== */
-
+.blog{
+  margin-top: 5%;
+}
 .blog h2 {
   text-align: center;
   font-family: "semibold";
@@ -4196,7 +4198,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   font-family: "regular";
   height: 50px;
 }
-.trucking .form-group button[type="submit"]{
+.trucking .form-group button[type="button"]{
   background-color: var(--color-secound);
   color: #fff;
   font-family: "semibold";
@@ -5270,7 +5272,7 @@ footer .footer-bottom .my-heart {
   .trucking .form-group{
     width: 100%;
   }
-  .trucking .form-group button[type="submit"]{
+  .trucking .form-group button[type="button"]{
     top: 45%;
   }
   .result_trucking .shipment_steps ul, .result_trucking .shipment_data .shipment_status ul, .result_trucking .personal_data ul, .result_trucking .shipment_data_trucking ul{

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/hover-min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/sweet-alert.css" />
     <!-- ? Custom CSS -->
     <!-- ? Bootstrap CSS -->
 
@@ -30,6 +31,7 @@
     <!-- ? Custom JavaScript -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/sweet-alert.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -258,7 +260,19 @@
                                 <textarea name="" id="" rows="5" class="form-control" placeholder="اكتب هنا"></textarea>
                             </div>
                             <!-- ======= Message ======= -->
-                            <button type="submit" class="btn btn-truck hvr-bob">ارسل الآن</button>
+                            <button type="button" class="btn btn-truck hvr-bob" id="track">ارسل الآن</button>
+                            <script>
+                                document.getElementById("track").onclick =
+                                  function () {
+                                    swal({
+                                      title: "قريبا",
+                                      text: "هذه الخدمة غير متوفرة الان",
+                                      type: "warning",
+                                      confirmButtonColor: "#AEDEF4",
+                                      closeOnConfirm: false,
+                                    });
+                                  };
+                              </script>
                         </div>
                     </form>
                 </div>
@@ -282,7 +296,7 @@
                             سريع و آمن </h4>
                     </div>
                     <div class="col-12 btn-solve">
-                        <a href="#" class="btn">تواصل معنا الآن</a>
+                        <a href="contact.html" class="btn">تواصل معنا الآن</a>
                     </div>
                 </div>
             </div>

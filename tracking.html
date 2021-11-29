@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/sweet-alert.css" />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -29,6 +30,7 @@
     <!-- ? Custom JavaScript -->
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/sweet-alert.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -113,7 +115,19 @@
                 <div class="form-group">
                   <label for="">من فضلك تتبع بالرقم الصحيح الآن</label>
                   <input type="text" name="" id="" class="form-control" placeholder="أدخل رقم الشحنه">
-                  <button type="submit" class="btn">تتبع المسار</button>
+                  <button type="button" class="btn" id="track">تتبع المسار</button>
+                  <script>
+                    document.getElementById("track").onclick =
+                      function () {
+                        swal({
+                          title: "قريبا",
+                          text: "هذه الخدمة غير متوفرة الان",
+                          type: "warning",
+                          confirmButtonColor: "#AEDEF4",
+                          closeOnConfirm: false,
+                        });
+                      };
+                  </script>
                 </div>
             </form>
         </div>
