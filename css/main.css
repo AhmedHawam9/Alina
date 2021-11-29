@@ -570,7 +570,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .shipment .card .card-body .card-text {
   color: #4E4E4E;
   font-family: "regular";
-  height: 100px;
+  height: 190px;
 }
 
 .shipment .card .card-body .btn {
@@ -950,7 +950,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .download .background-download {
   padding: 0;
   filter: brightness(50%);
-  height: 200px;
+  height: 350px;
 }
 
 .download .download-description {
