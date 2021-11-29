@@ -15,6 +15,7 @@
 
     <!-- ? Custom CSS -->
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/sweet-alert.css" />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -26,6 +27,7 @@
 
     <!-- ? Custom JavaScript -->
     <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/sweet-alert.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
@@ -88,8 +90,7 @@
             <li><a href="about.html">عن الشركه</a></li>
             <li><a href="contact.html">اتصل بنا</a></li>
             <li><a href="blog.html">مدونة</a></li>
-            <li><a class="new-shipment-btn btn" id="new-shipment-btn">شحنة
-                    جديدة</a>
+            <li><a class="new-shipment-btn btn" id="new-shipment-btn">شحنة جديدة</a>
             </li>
         </ul>
     </nav>
@@ -184,7 +185,21 @@
                                     </div>
                                     <!-- start select -->
                                 </div>
-                                <button type="submit" class="btn submit mx-auto d-block">احصل على الأسعار</button>
+                                <button type="button" id="form_personal" class="btn submit mx-auto d-block">احصل على
+                                    الأسعار</button>
+                                <script>
+                                    document.getElementById("form_personal").onclick = function () {
+                                        swal(
+                                            {
+                                                title: "قريبا",
+                                                text: "هذه الخدمة غير متوفرة الان",
+                                                type: "warning",
+                                                confirmButtonColor: "#AEDEF4",
+                                                closeOnConfirm: false,
+                                            },
+                                        );
+                                    };
+                                </script>
                             </form>
                         </div>
                     </div>
@@ -294,12 +309,11 @@
                             </div>
                         </div>
                         <ul>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
+                            <li>شحن افراد</li>
+                            <li>شحن لمحافظات</li>
+                            <li>شحن سريع</li>
                         </ul>
-                        <a href="#" class="btn">إختيار الباقة</a>
+                        <a id="package" class="btn">إختيار الباقة</a>
                     </div>
                 </div>
                 <!-- ======= package card ======= -->
@@ -315,12 +329,11 @@
                             </div>
                         </div>
                         <ul>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
+                            <li>شحن افراد</li>
+                            <li>شحن للدول</li>
+                            <li>شحن VIP</li>
                         </ul>
-                        <a href="#" class="btn">إختيار الباقة</a>
+                        <a id="package2" class="btn">إختيار الباقة</a>
                     </div>
                 </div>
                 <!-- ======= package card ======= -->
@@ -336,14 +349,52 @@
                             </div>
                         </div>
                         <ul>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
-                            <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</li>
+                            <li>شحن شركات</li>
+                            <li>شحن لمحافظات</li>
+                            <li>خدمات خاصه للشركات</li>
                         </ul>
-                        <a href="#" class="btn">إختيار الباقة</a>
+                        <a id="package3" class="btn">إختيار الباقة</a>
                     </div>
                 </div>
+                <script>
+                    document.getElementById("package").onclick = function () {
+                        swal(
+                            {
+                                title: "قريبا",
+                                text: "هذه الخدمة غير متوفرة الان",
+                                type: "warning",
+                                confirmButtonColor: "#AEDEF4",
+                                closeOnConfirm: false,
+                            },
+                        );
+                    };
+                </script>
+                <script>
+                    document.getElementById("package2").onclick = function () {
+                        swal(
+                            {
+                                title: "قريبا",
+                                text: "هذه الخدمة غير متوفرة الان",
+                                type: "warning",
+                                confirmButtonColor: "#AEDEF4",
+                                closeOnConfirm: false,
+                            },
+                        );
+                    };
+                </script>
+                <script>
+                    document.getElementById("package3").onclick = function () {
+                        swal(
+                            {
+                                title: "قريبا",
+                                text: "هذه الخدمة غير متوفرة الان",
+                                type: "warning",
+                                confirmButtonColor: "#AEDEF4",
+                                closeOnConfirm: false,
+                            },
+                        );
+                    };
+                </script>
                 <!-- ======= package card ======= -->
             </div>
         </div>
@@ -373,7 +424,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-lg-flex col-lg-8 col-md-12 col-sm-12 mx-auto" > 
+                <div class="d-lg-flex col-lg-8 col-md-12 col-sm-12 mx-auto">
                     <div class="col-lg-4 col-md-12 col-sm-12 col-links">
                         <div class="h3 d-block">روابط سريعة</div>
                         <div class="d-lg-block">
@@ -396,7 +447,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-12 col-sm-12 p-0 col-links">
                         <div class="h3 d-block">خليك على اتصال</div>
                         <div class="d-block">
@@ -458,6 +509,7 @@
         </div>
     </footer>
     <!-- ? ======= footer =========== -->
+
     <script src="js/main.js"></script>
 
 </body>

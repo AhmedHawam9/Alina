@@ -1085,6 +1085,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   justify-content: center;
   margin: 0 auto 5%;
   width: fit-content;
+  height: 60px;
 }
 
 .services-cards .card .card-body .card-title::after {
@@ -2154,12 +2155,13 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .team .card .card-name {
   font-family: "semibold";
   color: var(--color-fourth);
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
 
 .team .card .card-title {
   font-family: "regular";
   color: var(--color-fourth);
+  font-size: .8rem;
 }
 
 .team .card .card-text {
