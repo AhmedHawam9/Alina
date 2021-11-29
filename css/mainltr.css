@@ -5,7 +5,9 @@
   --color-third: #4E4E4E;
   --color-fourth: #1B1B1B;
 }
-
+.body.main{
+	overflow-y: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -122,6 +124,7 @@ body {
 .nav-top ul li:last-child a {
   direction: ltr;
   unicode-bidi: embed;
+  font-family: cursive;
 }
 
 .nav-top ul li svg {
@@ -294,6 +297,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .header {
   position: relative;
   height: 750px;
+  margin: 70px 0 0;
 }
 
 .header img {
@@ -378,6 +382,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 .services-header {
   position: relative;
+  margin: 70px 0 0;
 }
 
 .services-header img {
@@ -556,7 +561,9 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   border: none;
   margin: 5% 0;
 }
-
+.shipment .card .card-img-top{
+  height: 250px;
+}
 .shipment .card .card-body {
   box-shadow: 0px 6px 12px rgba(178, 178, 178, .16);
 }
@@ -829,7 +836,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 /* ========== blog =========== */
 .blog{
-  margin-top: 5%;
+  margin-top: 70px;
 }
 .blog h2 {
   text-align: center;
@@ -1772,7 +1779,9 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 /* ======= road_transport ======= */
 
 /* ======= header_map ======= */
-
+.header_map{
+  margin: 70px 0 0;
+}
 .header_map img {
   width: 100%;
   height: 400px;
@@ -1817,8 +1826,11 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin: 0 5%;
 }
 
-.contact-section .contact-card .text-contact p {
+.contact-section .contact-card .text-contact a {
   margin-bottom: 0;
+  font-family: cursive;
+  color: var(--color-third);
+  text-decoration: none;
 }
 
 .contact-form h3 {
@@ -1877,6 +1889,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 .about_header {
   position: relative;
+  margin: 70px 0 0;
 }
 
 .about_header img {
@@ -4450,6 +4463,7 @@ footer .logo-col ul li img {
 footer .logo-col ul li:last-child a {
   direction: ltr;
   unicode-bidi: embed;
+  font-family: cursive;
 }
 
 footer .logo-col p {
@@ -4741,6 +4755,7 @@ footer .footer-bottom .my-heart {
     z-index: 20;
     padding: 0;
     overflow-y: auto;
+    top: 90px;
   }
   nav .logo {
     width: 20%;
@@ -4971,7 +4986,7 @@ footer .footer-bottom .my-heart {
     height: 35px;
     padding: 7px;
   }
-  .contact-section .contact-card .text-contact p {
+  .contact-section .contact-card .text-contact a {
     font-size: .9rem;
   }
   .payment_way .package {
@@ -5224,7 +5239,7 @@ footer .footer-bottom .my-heart {
   .contact-section .contact-card {
     margin: 3% 0;
   }
-  .contact-section .contact-card .text-contact p {
+  .contact-section .contact-card .text-contact a {
     font-size: 1.1rem;
   }
   .about_header img {
@@ -5302,5 +5317,8 @@ footer .footer-bottom .my-heart {
   }
   .result_trucking .personal_data ul li:first-child .header_personal_data, .result_trucking .personal_data ul li .header_personal_data{
     border-radius: 8px 8px 0 0 !important;
+  }
+  .download .background-download{
+    height: 200px;
   }
 }

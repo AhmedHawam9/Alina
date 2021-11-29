@@ -39,3 +39,7 @@ document.getElementById("new-shipment-btn").onclick = function () {
     },
   );
 };
+
+$(".hamburger").click(function(){
+  $(".body").toggleClass("main");
+});
