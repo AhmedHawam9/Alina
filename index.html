@@ -99,8 +99,8 @@
         <li><a href="about.html">عن الشركه</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
         <li><a href="blog.html">مدونة</a></li>
-        <li><a class="new-shipment-btn btn" id="new-shipment-btn">شحنة
-            جديدة</a>
+        <li>
+          <a class="new-shipment-btn btn" id="new-shipment-btn">شحنة جديدة</a>
         </li>
       </ul>
     </nav>
@@ -137,7 +137,19 @@
                 placeholder="أدخل رقم الشحنه"
                 aria-describedby="helpId"
               />
-              <button type="submit" class="btn">تتبع المسار</button>
+              <button type="button" class="btn" id="track">تتبع المسار</button>
+              <script>
+                document.getElementById("track").onclick =
+                  function () {
+                    swal({
+                      title: "قريبا",
+                      text: "هذه الخدمة غير متوفرة الان",
+                      type: "warning",
+                      confirmButtonColor: "#AEDEF4",
+                      closeOnConfirm: false,
+                    });
+                  };
+              </script>
             </div>
           </form>
         </div>
@@ -677,15 +689,13 @@
                 </button>
                 <script>
                   document.getElementById("notify").onclick = function () {
-                    swal(
-                      {
-                        title: "قريبا",
-                        text: "هذه الخدمة غير متوفرة الان",
-                        type: "warning",
-                        confirmButtonColor: "#AEDEF4",
-                        closeOnConfirm: false,
-                      },
-                    );
+                    swal({
+                      title: "قريبا",
+                      text: "هذه الخدمة غير متوفرة الان",
+                      type: "warning",
+                      confirmButtonColor: "#AEDEF4",
+                      closeOnConfirm: false,
+                    });
                   };
                 </script>
               </div>
