@@ -14,6 +14,15 @@ body {
   overflow-x: hidden;
 }
 
+.float {
+  position: fixed;
+  width: 8%;
+  height: 35%;
+  bottom: -12%;
+  right: 40px;
+  z-index: 9999;
+}
+
 @font-face {
   font-family: "regular";
   src: url("../fonts/ArbFONTS-GE-Dinar-One-Light.otf");

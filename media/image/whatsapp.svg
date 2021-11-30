@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129" height="120" viewBox="0 0 129 120">
+  <defs>
+    <filter id="Rectangle_97" x="0" y="0" width="129" height="120" filterUnits="userSpaceOnUse">
+      <feOffset dy="17" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feFlood flood-color="#686868" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_485" data-name="Group 485" transform="translate(-1684 -1004)">
+    <g transform="matrix(1, 0, 0, 1, 1684, 1004)" filter="url(#Rectangle_97)">
+      <rect id="Rectangle_97-2" data-name="Rectangle 97" width="63" height="54" rx="4" transform="translate(33 16)" fill="#fff" opacity="0"/>
+    </g>
+    <g id="whatsapp" transform="translate(1725.467 1020.125)">
+      <path id="Path_171" data-name="Path 171" d="M27.273,0H27.26A27.1,27.1,0,0,0,0,26.875,26.42,26.42,0,0,0,5.191,42.627l-3.4,9.984,10.481-3.3a27.33,27.33,0,0,0,42.26-22.434A27.1,27.1,0,0,0,27.273,0Z" fill="#4caf50"/>
+      <path id="Path_172" data-name="Path 172" d="M138.979,142.747c-.658,1.831-3.269,3.349-5.351,3.793-1.425.3-3.286.537-9.55-2.022-8.013-3.272-13.173-11.3-13.575-11.818-.385-.521-3.238-4.25-3.238-8.106a8.529,8.529,0,0,1,2.788-6.541,4,4,0,0,1,2.788-.964c.337,0,.641.017.913.03.8.034,1.2.081,1.731,1.327.658,1.562,2.26,5.419,2.451,5.815a1.58,1.58,0,0,1,.116,1.455,4.645,4.645,0,0,1-.883,1.233c-.4.457-.784.806-1.186,1.3-.368.427-.784.883-.32,1.673a23.91,23.91,0,0,0,4.424,5.419,20.111,20.111,0,0,0,6.394,3.887,1.743,1.743,0,0,0,1.922-.3,32.57,32.57,0,0,0,2.13-2.782,1.534,1.534,0,0,1,1.956-.585c.736.252,4.632,2.15,5.433,2.543s1.329.585,1.524.917A6.6,6.6,0,0,1,138.979,142.747Z" transform="translate(-95.839 -104.796)" fill="#fafafa"/>
+    </g>
+  </g>
+</svg>
