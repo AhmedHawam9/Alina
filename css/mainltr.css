@@ -632,6 +632,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   filter: bleftness(50%);
   width: 100%;
   border-radius: 8px;
+  height: 255px;
 }
 
 .services .services_Swiper .swiper-slide {
@@ -655,12 +656,13 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
   margin: 0 2%;
 }
 
-.services .services_Swiper .description span {
+.services .services_Swiper .description a {
   color: var(--color-secound);
   font-family: "semibold";
+  text-decoration: none;
 }
 
-.services .services_Swiper .description span svg {
+.services .services_Swiper .description a svg {
   margin: 0 5%;
 }
 
