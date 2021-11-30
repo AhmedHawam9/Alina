@@ -114,19 +114,8 @@
           <div class="content">
             <h2 class="text-header">شركة علينا لشحن قوي آمن و سريع</h2>
             <p>نقدم خدماتنا للأفراد و الشركات والمؤسسات وجميع أنواع الشحن</p>
-            <a class="btn new-track" id="shipment-btn">شحنة جديدة</a>
-            <script>
-              document.getElementById("shipment-btn").onclick = function () {
-                swal({
-                  title: "قريبا",
-                  text: "هذه الخدمة غير متوفرة الان",
-                  type: "warning",
-                  confirmButtonColor: "#AEDEF4",
-                  closeOnConfirm: false,
-                });
-              };
-            </script>
-            <a href="#download" class="btn download">تحميل التطبيق</a>
+            <a class="btn new-track">شحنة جديدة</a>
+            <a class="btn download">تحميل التطبيق</a>
           </div>
         </div>
       </div>
@@ -295,7 +284,11 @@
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              <img src="media/image/3.jpg" class="card-img-top" alt="ship" />
+              <img
+                src="media/image/3.jpg"
+                class="card-img-top"
+                alt="ship"
+              />
               <div class="card-body">
                 <h5 class="card-title">شحن المطاعم والمتاجر الإلكترونية</h5>
                 <p class="card-text">
@@ -361,7 +354,7 @@
               والطرود، أو الوثائق مع حماية عالية من السلامة، آمنة وصول خدمات
               التوصيل السريع تعطيك تجربة تسليم
             </p>
-            <a href="services.html" class="btn">أعرف أكثر عن خدماتنا</a>
+            <a href="#" class="btn">أعرف أكثر عن خدماتنا</a>
           </div>
           <div class="col-lg-6 col-sm-12">
             <!-- Swiper -->
@@ -383,7 +376,9 @@
                   <div class="description">
                     <img src="media/image/icon/truck.png" alt="" />
                     <h6>شحن للأفراد</h6>
-                    <a href="shipment_personal.html"><i class="fas fa-location-arrow"></i> إكتشف الأن</a>
+                    <span
+                      ><i class="fas fa-location-arrow"></i> إكتشف الأن</span
+                    >
                   </div>
                 </div>
                 <!-- ========= Slide ========= -->
@@ -397,7 +392,9 @@
                   <div class="description">
                     <img src="media/image/icon/truck.png" alt="" />
                     <h6>شحن للشركات</h6>
-                    <a href="shipment_company.html"><i class="fas fa-location-arrow"></i> إكتشف الأن</a>
+                    <span
+                      ><i class="fas fa-location-arrow"></i> إكتشف الأن</span
+                    >
                   </div>
                 </div>
                 <!-- ========= Slide ========= -->
@@ -405,13 +402,15 @@
                 <div class="swiper-slide">
                   <img
                     class="services-img"
-                    src="media/image/3.jpg"
+                    src="media/image/services3.jpg"
                     alt="services"
                   />
                   <div class="description">
                     <img src="media/image/icon/truck.png" alt="" />
                     <h6>شحن للمطاعم</h6>
-                    <a href="shipment_company.html"><i class="fas fa-location-arrow"></i> إكتشف الأن</a>
+                    <span
+                      ><i class="fas fa-location-arrow"></i> إكتشف الأن</span
+                    >
                   </div>
                 </div>
                 <!-- ========= Slide ========= -->
@@ -425,7 +424,9 @@
                   <div class="description">
                     <img src="media/image/icon/truck.png" alt="" />
                     <h6>شحن للأفراد</h6>
-                    <a href="shipment_personal.html"><i class="fas fa-location-arrow"></i> إكتشف الأن</a>
+                    <span
+                      ><i class="fas fa-location-arrow"></i> إكتشف الأن</span
+                    >
                   </div>
                 </div>
                 <!-- ========= Slide ========= -->
@@ -439,7 +440,9 @@
                   <div class="description">
                     <img src="media/image/icon/truck.png" alt="" />
                     <h6>شحن للشركات</h6>
-                    <a href="shipment_company.html"><i class="fas fa-location-arrow"></i> إكتشف الأن</a>
+                    <span
+                      ><i class="fas fa-location-arrow"></i> إكتشف الأن</span
+                    >
                   </div>
                 </div>
                 <!-- ========= Slide ========= -->
@@ -447,13 +450,15 @@
                 <div class="swiper-slide">
                   <img
                     class="services-img"
-                    src="media/image/3.jpg"
+                    src="media/image/services3.jpg"
                     alt="services"
                   />
                   <div class="description">
                     <img src="media/image/icon/truck.png" alt="" />
                     <h6>شحن للمطاعم</h6>
-                    <a href="shipment_company.html"><i class="fas fa-location-arrow"></i> إكتشف الأن</a>
+                    <span
+                      ><i class="fas fa-location-arrow"></i> إكتشف الأن</span
+                    >
                   </div>
                 </div>
                 <!-- ========= Slide ========= -->
@@ -733,10 +738,7 @@
                 وحرفيه وبأقل الأسعار
               </h3>
               <p class="text-article">
-                توصيل الشحنة في الموعد المحدد والمتفق عليه دون أي تأخير خلال
-                ثمانية وأربعين ساعة بين كافة المحافظات في مصر مهما بلغت درجة بعد
-                المحافظة. توصيل الشحنة بأمان تام دون أن تتعرض الشحنات للتلف أو
-                الفقدان أو أي خسارة أخرى أثناء عماية الشحن.
+                توصيل الشحنة في الموعد المحدد والمتفق عليه دون أي تأخير خلال ثمانية وأربعين ساعة بين كافة المحافظات في مصر مهما بلغت درجة بعد المحافظة. توصيل الشحنة بأمان تام دون أن تتعرض الشحنات للتلف أو الفقدان أو أي خسارة أخرى أثناء عماية الشحن.
               </p>
             </div>
             <!-- ======== Main article ======== -->
@@ -765,10 +767,7 @@
                     بأمان وحرفيه وبأقل الأسعار
                   </h5>
                   <p class="text-article">
-                    توصيل الشحنة في الموعد المحدد والمتفق عليه دون أي تأخير خلال
-                    ثمانية وأربعين ساعة بين كافة المحافظات في مصر مهما بلغت درجة
-                    بعد المحافظة. توصيل الشحنة بأمان تام دون أن تتعرض الشحنات
-                    للتلف أو الفقدان أو أي خسارة أخرى أثناء عماية الشحن.
+                    توصيل الشحنة في الموعد المحدد والمتفق عليه دون أي تأخير خلال ثمانية وأربعين ساعة بين كافة المحافظات في مصر مهما بلغت درجة بعد المحافظة. توصيل الشحنة بأمان تام دون أن تتعرض الشحنات للتلف أو الفقدان أو أي خسارة أخرى أثناء عماية الشحن.
                   </p>
                 </div>
               </div>
@@ -797,10 +796,7 @@
                     بأمان وحرفيه وبأقل الأسعار
                   </h5>
                   <p class="text-article">
-                    توصيل الشحنة في الموعد المحدد والمتفق عليه دون أي تأخير خلال
-                    ثمانية وأربعين ساعة بين كافة المحافظات في مصر مهما بلغت درجة
-                    بعد المحافظة. توصيل الشحنة بأمان تام دون أن تتعرض الشحنات
-                    للتلف أو الفقدان أو أي خسارة أخرى أثناء عماية الشحن.
+                    توصيل الشحنة في الموعد المحدد والمتفق عليه دون أي تأخير خلال ثمانية وأربعين ساعة بين كافة المحافظات في مصر مهما بلغت درجة بعد المحافظة. توصيل الشحنة بأمان تام دون أن تتعرض الشحنات للتلف أو الفقدان أو أي خسارة أخرى أثناء عماية الشحن.
                   </p>
                 </div>
               </div>
@@ -855,7 +851,7 @@
     <!-- =========== ? blog =========== -->
 
     <!-- =========== ? Download =========== -->
-    <section class="download" id="download">
+    <section class="download">
       <div class="container-fluid">
         <div class="row">
           <img
@@ -962,7 +958,9 @@
             "
           >
             <img src="media/image/logo-footer.png" alt="logo footer" />
-            <p></p>
+            <p>
+              
+            </p>
             <ul>
               <li class="hvr-icon-buzz-out">
                 <i class="far fa-clock hvr-icon"></i>
@@ -1043,7 +1041,7 @@
                   </button>
                 </form>
                 <ul class="socialicon mt-2">
-                  <li>
+                  <!-- <li>
                     <a href="https://www.facebook.com/ahmedhawam2030"
                       ><i class="fab fa-facebook-f icon"></i
                     ></a>
@@ -1062,7 +1060,11 @@
                     <a href="https://www.instagram.com/ahmed_hawam"
                       ><i class="fab fa-instagram icon"></i
                     ></a>
-                  </li>
+                  </li> -->
+                  <li>
+                    <a href="https://api.whatsapp.com/send?phone=+966506661277"><i
+                            class="fab fa-whatsapp icon"></i></a>
+                </li>
                 </ul>
               </div>
             </div>
