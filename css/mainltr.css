@@ -915,6 +915,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .blog .article {
   display: flex;
   margin: 0 0 5%;
+  text-decoration: none;
 }
 
 .blog .article .img-article {
@@ -2231,7 +2232,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .blog .headlines .title_headlines .icon {
   width: 25%;
   height: 100%;
-  background-color: #322473;
+  background-color: var(--color-primary);
   color: #fff;
   display: flex;
   align-items: center;
@@ -2291,7 +2292,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .blog .latest_posts .title_latest_posts .icon {
   width: 25%;
   height: 100%;
-  background-color: #322473;
+  background-color: var(--color-primary);
   color: #fff;
   display: flex;
   align-items: center;
@@ -2362,7 +2363,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 .blog .archives .title_archives .icon {
   width: 25%;
   height: 100%;
-  background-color: #322473;
+  background-color: var(--color-primary);
   color: #fff;
   display: flex;
   align-items: center;
