@@ -204,6 +204,7 @@ nav .nav-links li:last-child a.active {
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
+  margin-bottom: 0 !important;
 }
 
 nav .nav-links .dropdown-toggle {
@@ -4763,6 +4764,9 @@ footer .footer-bottom .my-heart {
 /* ====== Tablet style ====== */
 
 @media only screen and (max-width: 991.98px) {
+  .trucking {
+    margin: 20% 0 5%;
+  }
   nav {
     position: relative;
     z-index: 20;
