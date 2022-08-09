@@ -4767,11 +4767,14 @@ footer .footer-bottom .my-heart {
   .trucking {
     margin: 20% 0 5%;
   }
-  .login {
+  .login, .signup {
     padding: 20% 0 10%;
   }
-  .login .form-login {
+  .login .form-login, .signup .form-signup {
     padding: 5% !important;
+  }
+  .float {
+    width: 15%;
   }
   nav {
     position: relative;
@@ -5158,16 +5161,20 @@ footer .footer-bottom .my-heart {
   .trucking {
     margin: 30% 0 10%;
   }
-  .login {
+  .login, .signup {
     padding: 30% 0 10%;
   }
-  .login .form-login {
+  .login .form-login, .signup .form-signup {
     padding: 5% !important;
   }
   .hamburger div {
     width: 40px;
     height: 5px;
     margin: 8px;
+  }
+  .float {
+    width: 25%;
+    right: 0;
   }
   nav .logo {
     width: 25%;
