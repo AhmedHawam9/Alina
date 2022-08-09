@@ -5149,6 +5149,9 @@ footer .footer-bottom .my-heart {
 /* ====== Mobile style ====== */
 
 @media only screen and (max-width: 767.98px) {
+  .trucking {
+    margin: 30% 0 10%;
+  }
   .hamburger div {
     width: 40px;
     height: 5px;
