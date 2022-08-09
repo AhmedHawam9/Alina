@@ -2401,7 +2401,7 @@ nav .nav-links .dropdown-menu .dropdown-item:hover {
 
 .login {
   background-color: #F7F7F7;
-  padding: 5% 0;
+  padding: 10% 0;
 }
 
 .login .form-login {
@@ -4767,6 +4767,12 @@ footer .footer-bottom .my-heart {
   .trucking {
     margin: 20% 0 5%;
   }
+  .login {
+    padding: 20% 0 10%;
+  }
+  .login .form-login {
+    padding: 5% !important;
+  }
   nav {
     position: relative;
     z-index: 20;
@@ -5151,6 +5157,12 @@ footer .footer-bottom .my-heart {
 @media only screen and (max-width: 767.98px) {
   .trucking {
     margin: 30% 0 10%;
+  }
+  .login {
+    padding: 30% 0 10%;
+  }
+  .login .form-login {
+    padding: 5% !important;
   }
   .hamburger div {
     width: 40px;
